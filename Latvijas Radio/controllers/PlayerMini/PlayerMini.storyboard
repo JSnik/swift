@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Mini View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PlayerMiniViewController" id="BYZ-38-t0r" customClass="PlayerMiniViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-4h-rcV" userLabel="wrapperPlayerMini">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="71g-Pn-JTt" userLabel="buttonPlayerLarge" customClass="UIButtonPlayerMini" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="-1" y="-1" width="414" height="768"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                    </button>
+                                    <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oBT-lI-ZS7" userLabel="sliderTimeline" customClass="UISliderBase" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="0.0" width="418" height="31"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </slider>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="utP-ia-2Pd" userLabel="wrapperView">
+                                        <rect key="frame" x="16" y="408" width="315" height="2"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Gg-FO-Ife" userLabel="imageChannel">
+                                                <rect key="frame" x="0.0" y="-12" width="26" height="26"/>
+                                                <color key="backgroundColor" name="black5percent"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26" id="E6q-jO-afB"/>
+                                                    <constraint firstAttribute="height" constant="26" id="wfX-C2-XTe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugj-31-aEt" userLabel="textTitlePrimary" customClass="UILabelLabel5" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="34" y="0.0" width="281" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKE-DZ-CHa" userLabel="textTitleSecondary" customClass="UILabelLabel2" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="34" y="2" width="281" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="6Gg-FO-Ife" firstAttribute="centerY" secondItem="utP-ia-2Pd" secondAttribute="centerY" id="83p-bP-2ka"/>
+                                            <constraint firstItem="OKE-DZ-CHa" firstAttribute="leading" secondItem="6Gg-FO-Ife" secondAttribute="trailing" constant="8" id="KYe-uz-knc"/>
+                                            <constraint firstAttribute="trailing" secondItem="OKE-DZ-CHa" secondAttribute="trailing" id="My1-bZ-yLT"/>
+                                            <constraint firstItem="Ugj-31-aEt" firstAttribute="top" secondItem="utP-ia-2Pd" secondAttribute="top" id="OHH-h3-pdo"/>
+                                            <constraint firstItem="OKE-DZ-CHa" firstAttribute="top" secondItem="Ugj-31-aEt" secondAttribute="bottom" constant="2" id="QVw-uM-NxS"/>
+                                            <constraint firstAttribute="bottom" secondItem="OKE-DZ-CHa" secondAttribute="bottom" id="RHO-2p-4LF"/>
+                                            <constraint firstItem="Ugj-31-aEt" firstAttribute="leading" secondItem="6Gg-FO-Ife" secondAttribute="trailing" constant="8" id="aVb-rr-be8"/>
+                                            <constraint firstItem="6Gg-FO-Ife" firstAttribute="leading" secondItem="utP-ia-2Pd" secondAttribute="leading" id="hTP-Eq-eeY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ugj-31-aEt" secondAttribute="trailing" id="neC-Vj-lEF"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIc-C8-qWq" userLabel="buttonTogglePlayback" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="359" y="385" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="k0v-WD-qnb"/>
+                                            <constraint firstAttribute="height" constant="48" id="kgX-R6-pDf"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="9" minY="9" maxX="9" maxY="9"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_play_extruded"/>
+                                    </button>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DJk-GW-umP" userLabel="activityIndicator">
+                                        <rect key="frame" x="339" y="399" width="20" height="20"/>
+                                        <color key="color" name="black"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" name="gray6"/>
+                                <constraints>
+                                    <constraint firstItem="DJk-GW-umP" firstAttribute="leading" secondItem="utP-ia-2Pd" secondAttribute="trailing" constant="8" id="A03-ZL-E56"/>
+                                    <constraint firstItem="utP-ia-2Pd" firstAttribute="leading" secondItem="pmb-4h-rcV" secondAttribute="leading" constant="16" id="DnT-tM-ijy"/>
+                                    <constraint firstItem="utP-ia-2Pd" firstAttribute="centerY" secondItem="pmb-4h-rcV" secondAttribute="centerY" id="Eyk-Cl-iiN"/>
+                                    <constraint firstItem="ZIc-C8-qWq" firstAttribute="centerY" secondItem="pmb-4h-rcV" secondAttribute="centerY" id="WnR-eG-H9A"/>
+                                    <constraint firstItem="ZIc-C8-qWq" firstAttribute="leading" secondItem="DJk-GW-umP" secondAttribute="trailing" id="aCs-Ur-tt8"/>
+                                    <constraint firstItem="DJk-GW-umP" firstAttribute="centerY" secondItem="pmb-4h-rcV" secondAttribute="centerY" id="cHH-0k-ffK"/>
+                                    <constraint firstItem="oBT-lI-ZS7" firstAttribute="top" secondItem="pmb-4h-rcV" secondAttribute="top" id="euD-iw-th4"/>
+                                    <constraint firstAttribute="height" constant="50" id="gVq-ew-yTK"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZIc-C8-qWq" secondAttribute="trailing" constant="7" id="hde-ne-Ubd"/>
+                                    <constraint firstAttribute="trailing" secondItem="oBT-lI-ZS7" secondAttribute="trailing" id="iZK-Ek-jud"/>
+                                    <constraint firstItem="oBT-lI-ZS7" firstAttribute="leading" secondItem="pmb-4h-rcV" secondAttribute="leading" id="wV9-eC-dxR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pmb-4h-rcV" secondAttribute="bottom" id="4rj-dp-8c4"/>
+                            <constraint firstItem="pmb-4h-rcV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9VQ-sX-aaN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pmb-4h-rcV" secondAttribute="trailing" id="NTR-Zt-V8G"/>
+                            <constraint firstItem="pmb-4h-rcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QRt-h2-IAo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="DJk-GW-umP" id="vGe-XZ-Q5a"/>
+                        <outlet property="buttonPlayerLarge" destination="71g-Pn-JTt" id="ZoM-5Q-DSl"/>
+                        <outlet property="buttonTogglePlayback" destination="ZIc-C8-qWq" id="BAX-YJ-lhb"/>
+                        <outlet property="imageChannel" destination="6Gg-FO-Ife" id="57R-XH-RwZ"/>
+                        <outlet property="sliderTimeline" destination="oBT-lI-ZS7" id="j3R-mg-xDv"/>
+                        <outlet property="textTitlePrimary" destination="Ugj-31-aEt" id="XsV-aZ-21o"/>
+                        <outlet property="textTitleSecondary" destination="OKE-DZ-CHa" id="8gj-t6-Ckv"/>
+                        <outlet property="wrapperPlayerMini" destination="pmb-4h-rcV" id="Bx7-Dw-iee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_play_extruded" width="30" height="30"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black5percent">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.05000000074505806" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray6">
+            <color red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

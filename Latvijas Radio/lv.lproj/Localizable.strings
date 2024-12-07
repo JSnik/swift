@@ -1,0 +1,148 @@
+/*
+  Localizable.strings
+  Latvijas Radio
+
+  Created by Sandis Putnis on 13/12/2021.
+ 
+ !!! In android we have &amp;
+ !!! In iOS convert them to &
+  
+*/
+
+"network_error_generic" = "Pieprasījuma kļūda";
+"network_error_no_connection" = "Nav tīkla savienojuma";
+"network_error_request_timed_out" = "Pieprasījuma noilgums";
+"network_error_authentication" = "Autentifikācijas kļūda";
+"network_error_server" = "Servera kļūda";
+"network_error_during_request" = "Tīkla kļūda";
+"network_error_unparseable" = "Datu parsēšanas kļūda";
+
+"error_json_parse" = "Datu parsēšanas kļūda";
+
+"email_is_already_in_use" = "Lietotājs ar šādu e-pastu jau ir reģistrēts.";
+"invalid_credentials" = "Nepareizs lietotājvārds vai parole";
+"verification_code_not_valid" = "Verifikācijas kods nav pareizs.";
+"invalid_jwt_token" = "Sesija beigusies, lūdzu pieslēdzieties vēlreiz.";
+"jwt_token_expired" = "Sesijas tokens beidzies, lūdzu pieslēdzieties vēlreiz.";
+"refresh_token_not_found" = "Autorizācijas tokens nav atrasts, lūdzu pieslēdzieties vēlreiz.";
+"broadcast_not_found" = "Šāds raidījums netika atrasts.";
+"user_not_found" = "Lietotājs netika atrasts.";
+"episode_not_found" = "Epizode netika atrasta.";
+
+"login" = "Ienākt bez reģistrēšanās";
+"logout" = "Iziet";
+"or" = "vai";
+"email" = "E-pasts";
+"password" = "Parole";
+"forgot_password" = "Aizmirsu paroli";
+"connect" = "Pieslēgties";
+"connect_with_apple" = "Pieslēgties ar Apple";
+"connect_with_facebook" = "Pieslēgties ar Facebook";
+"connect_with_google" = "Pieslēgties ar Google";
+"register" = "Reģistrēties";
+"sign_in_failed_description" = "Neizdevās pieslēgties. Lūdzu pārbaudiet interneta pieslēgumu un mēģiniet vēlreiz.";
+"registration" = "Reģistrācija";
+"name" = "Vārds";
+"thank_you" = "Paldies!";
+"registration_check_email_description" = "Lai pabeigtu reģistrāciju, atveriet telefonā savu e-pastu un spiediet uz saņemto saiti.";
+"forgot_password_check_email_description" = "Lai pabeigtu paroles atjaunošanu, atveriet telefonā savu e-pastu un spiediet uz saņemto saiti.";
+"reset_password" = "Atjaunot paroli";
+"send" = "Nosūtīt";
+"enter_password" = "Ievadiet paroli";
+"password_repeat" = "Ievadiet paroli atkārtoti";
+"save" = "Saglabāt";
+"enter_new_password" = "Ievadiet jauno paroli";
+"new_password" = "Jaunā parole";
+"new_password_repeat" = "Jaunā parole atkārtoti";
+"no_internet_connection" = "Nav interneta savienojuma";
+"listen_to_downloads" = "Klausīties lejuplādes";
+"start" = "Sākums";
+"livestreams" = "Tiešraides";
+"broadcasts" = "Raidījumi";
+"search" = "Meklēt";
+"my_radio" = "Mans radio";
+"view_all" = "Skatīt visas";
+"newest_episodes" = "Jaunākās epizodes";
+"episode" = "Epizode";
+"livestream" = "Tiešraide";
+"internet_channels" = "Interneta kanāli";
+"back" = "Atpakaļ";
+"add" = "Pievienot";
+"remove" = "Noņemt";
+"subscribe" = "Sekot";
+"unsubscribe" = "Sekoju";
+"more_about_this_topic" = "Vairāk par šo tēmu";
+"broadcast_hosts" = "Raidījuma veidotāji";
+"available_episodes" = "Pieejamās epizodes";
+"episode_couldnt_be_downloaded" = "Epizodi nevarēja lejupielādēt";
+"cant_access_downloaded_file" = "Nevar piekļūt lejupielādētajam failam";
+"share" = "Dalīties";
+"copy_link" = "Kopēt saiti";
+"copied_to_clipboard" = "Saite ielikta starpliktuvē";
+"call" = "Zvanīt";
+"send_a_message" = "Sūtīt ziņu";
+"download" = "Lejuplādēt";
+"speed" = "Ātrums";
+"autoplay" = "Automātiskā atskaņošana";
+"your_message" = "Ziņas teksts";
+"message_sent" = "Ziņa nosūtīta, paldies!";
+"privacy_policy" = "Privātuma politika";
+"try_again" = "Mēģināt vēlreiz";
+"close" = "Aizvērt";
+"categories" = "Kategorijas";
+"channels" = "Kanāli";
+"channel" = "Kanāls";
+"all_broadcasts" = "Visi raidījumi";
+"latest_news" = "Jaunākais\nziņu apskats";
+"new_episodes" = "Jaunās epizodes";
+"my_list" = "Mans saraksts";
+"downloads" = "Lejuplādes";
+"subscribed_broadcasts" = "Raidījumi, kam sekoju";
+"settings" = "Uzstādījumi";
+"notifications" = "Paziņojumi";
+"language" = "Valoda";
+"download_only_with_wifi" = "Lejuplādēt tikai izmantojot wi-fi";
+"delete_completed_episodes" = "Automātiski dzēst pabeigtās epizodes no \"Mans saraksts\"";
+"support" = "Tehniskais atbalsts";
+"message_text" = "Ziņas teksts";
+"support_success_description_1" = "Paldies!";
+"support_success_description_2" = "Vēstule veiksmīgi nosūtīta.";
+"load_more" = "Ielādēt vairāk";
+"category" = "Kategorija";
+"no_connection_to_wifi" = "Nav pieslēgums pie wi-fi";
+"newest_episodes_from_subscribed_broadcasts_no_results_description" = "Sekojiet raidījumiem, lai redzētu to jaunākās epizodes šeit.";
+"subscribed_episodes_no_results_description_1" = "Pievienojiet epizodes ar ";
+"subscribed_episodes_no_results_description_2" = ", lai varētu tās kārtot savā atskaņošanas sarakstā.";
+"downloads_no_results_description" = "Lejuplādējiet epizodi, lai klausītos to bezsaistē.";
+"guest" = "Viesis";
+"authenticate" = "Autorizēties";
+"password_legend" = "Parolei jāsastāv vismaz no 8 simboliem";
+"download_started" = "Lejuplāde uzsākta";
+"episode_downloaded_successfully" = "Epizode veiksmīgi lejuplādēta";
+"receive_notification_description" = "Saņemt paziņojumus par jaunajām epizodēm raidījumiem, kam sekoju";
+"facebook_registration_fail_no_email" = "Facebook kontam nav piesaistīts e-pasts. Lūdzu izmantojiet kontu kuram ir piesaistīts e-pasts vai turpiniet ar alternatīvu metodi.";
+"change_livestreams_order_in_dashboard" = "Mainīt tiešraižu secību sākuma sadaļā";
+"settings_saved" = "Iestatījumi saglabāti";
+"playback_timeout" = "Atskaņošanas iemidzināšana";
+"turn_off" = "Izslēgt";
+"after_30m" = "Pēc 30m";
+"after_1h" = "Pēc 1h";
+"after_1h30m" = "Pēc 1h 30m";
+"daily_news" = "Dienas ziņas";
+"playlist" = "Atskaņošanas saraksts";
+
+// Platform specific - Android
+// ..
+
+// Platform specific - iOS
+
+"version_colled" = "Versija: ";
+"new_episode_for_broadcast" = "Jauna epizode raidījumam";
+"i_agree_to_tos_etc_underlined" = "Piekrītu <u>privātuma politikai.</u>";
+"playback_error_unknown" = "Problēma atskaņošanā. Pārliecinieties, ka Jūsu ierīcei ir interneta savienojums.";
+"ok" = "Ok";
+"cancel" = "Atcelt";
+"delete_account" = "Dzēst kontu";
+"account_deletion_description" = "Konta dzēšana ir neatgriezeniska.\nVai tiešām vēlaties dzēst savu kontu un ar to saistītos datus?";
+"to_continue_authenticate" = "Lai turpinātu, lūdzu autentificējieties.";
+"loading" = "Notiek ielāde...";

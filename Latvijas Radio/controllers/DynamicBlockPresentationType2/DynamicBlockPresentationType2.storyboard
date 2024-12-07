@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Block Presentation Type2 View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DynamicBlockPresentationType2ViewController" id="BYZ-38-t0r" customClass="DynamicBlockPresentationType2ViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0F5-KS-qcP" userLabel="wrapperContent">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ci-MR-bi8" userLabel="textTitle" customClass="UILabelH4" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="588"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Zz-W4-aGY" userLabel="containerGenericPreviewsCollection">
+                                        <rect key="frame" x="0.0" y="598" width="414" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="Nyg-LY-RMO"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="jSL-RB-Q4r" kind="embed" identifier="SegueEmbedGenericPreviewsCollection" id="NqS-AT-0Dy"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Zz-W4-aGY" secondAttribute="trailing" id="BJH-a3-TrK"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Zz-W4-aGY" secondAttribute="bottom" id="COu-Nk-vB3"/>
+                                    <constraint firstItem="6Ci-MR-bi8" firstAttribute="top" secondItem="0F5-KS-qcP" secondAttribute="top" id="KnY-Ad-eiv"/>
+                                    <constraint firstItem="1Zz-W4-aGY" firstAttribute="leading" secondItem="0F5-KS-qcP" secondAttribute="leading" id="Ngo-eK-ZhU"/>
+                                    <constraint firstItem="6Ci-MR-bi8" firstAttribute="leading" secondItem="0F5-KS-qcP" secondAttribute="leading" constant="16" id="U83-Kl-UNq"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Ci-MR-bi8" secondAttribute="trailing" constant="16" id="gCt-E6-gka"/>
+                                    <constraint firstItem="1Zz-W4-aGY" firstAttribute="top" secondItem="6Ci-MR-bi8" secondAttribute="bottom" constant="10" id="rB6-j6-MUa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0F5-KS-qcP" secondAttribute="bottom" id="HoH-o1-VaK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0F5-KS-qcP" secondAttribute="trailing" id="IfS-2e-jIb"/>
+                            <constraint firstItem="0F5-KS-qcP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nWp-tn-AsW"/>
+                            <constraint firstItem="0F5-KS-qcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x7j-mT-PyO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textTitle" destination="6Ci-MR-bi8" id="lhe-TS-491"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+        <!--GenericPreviewsCollectionViewController-->
+        <scene sceneID="rEp-yf-geQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GenericPreviewsCollection" referencedIdentifier="GenericPreviewsCollectionViewController" id="jSL-RB-Q4r" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="80G-gC-QiZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="96"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="6Ci-MR-bi8">
+            <size key="intrinsicContentSize" width="31" height="20.5"/>
+        </designable>
+    </designables>
+</document>

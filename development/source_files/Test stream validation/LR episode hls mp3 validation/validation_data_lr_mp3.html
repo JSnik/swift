@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+	<style>
+		body {
+			font: 12px/18px "Lucida Grande", Arial, Verdana, sans-serif;
+			background-color: #fff;
+			color: #333;
+		}
+
+		h2 {
+		    color: maroon;
+		    font-size: 16px;
+		}
+		
+		span.suffix {
+		    font-size: 14px;
+		}
+
+		h3 {
+		    color: maroon;
+		}
+
+		p.legend {
+			color: #2F4F4F;
+			padding-top: 0px;
+	    	padding-bottom: 0px;
+		    margin-top: 2px;
+			margin-bottom: 2px;
+		}
+
+		p.header {
+			margin-bottom: 2px;
+		}
+
+		p.desc {
+			font-style: italic;
+		    margin-top: 6px;
+			margin-bottom: 6px;
+		}
+
+		table.dur_table {
+			border-top: 1px solid #cdd0d4;
+			border-bottom: 1px solid #cdd0d4;
+			border-collapse: collapse;
+		}
+
+		tr.highlight {
+			background: #f3f3f3;
+		}
+
+		table.variants, table.meta {
+		    border-top: 1px solid #cdd0d4;
+			border-bottom: 1px solid #cdd0d4;
+			border-collapse: collapse;
+		}
+
+		td, th {
+		    padding-left: 6px;
+		    padding-right: 6px;
+		    text-align: right;
+		}
+
+		td.error, th.error {
+		    padding-left: 6px;
+		    padding-right: 6px;
+		    text-align: right;
+		}
+
+		td.center, th.center {
+			text-align: center;
+		}
+
+		td.agroup, th.agroup {
+			width: 54px;
+		}
+
+		th.left, td.left {
+			padding-left: 10px;
+		    padding-right: 10px;
+		    text-align: left;
+		}
+
+		th.meta {
+			text-align: center;
+		}
+		
+		td.meta {
+			border-bottom: 1px solid #cdd0d4;
+		}
+
+		.idCircle {
+		    border-radius: 20%;
+		    padding: 1px;
+
+		    background: #606060;
+		    border: 1px solid #606060;
+		    color: #fff;
+		    text-align: center;
+		}
+
+		button {
+			border-style: solid;
+			border-color: lightskyblue;
+			border-radius: 8px;
+			margin-left: 6px;
+			vertical-align: middle;
+			background-color:lightblue;
+			padding:2px 6px;
+		}
+
+	</style>
+
+<script>
+function toggleSection(name) {
+	var x = document.getElementById(name);
+	if (x.style.display === "none") {
+		x.style.display = "block";
+		event.target.innerHTML = "Hide";
+	} else {
+		x.style.display = "none";
+		event.target.innerHTML = "Show";
+	}
+}
+</script>
+
+</head>
+<body>
+    <h2 id="top">HLS Validation Report<span class="suffix"> (General, tvOS, iOS, macOS, AirPlay 2)</span></h2>
+    <p>Stream type: VOD</p>
+    <p><a href="https://5a44e5b800a41.streamlock.net/lr0/_definst_/mp3:302003.mp3/playlist.m3u8">https://5a44e5b800a41.streamlock.net/lr0/_definst_/mp3:302003.mp3/playlist.m3u8</a></p>
+    <h3>Variant Overview</h3>
+<table class="variants">
+  <tr>
+   <th class="agroup">Audio ID</th>
+   <th class="center">#</th>
+   <th>Max Rate</th>
+   <th>% Diff.</th>
+   <th>Avg Rate</th>
+   <th>Resolution</th>
+   <th>IDR Int.</th>
+   <th>Framerate</th>
+   <th>Codec</th>
+   <th>Profile</th>
+   <th>Level</th>
+   <th>Encryption</th>
+   <th>Audio Track Info</th>
+   <th>% Proc.</th>
+  </tr>
+  <tr>
+    <td>NONE</td>
+    <td class="center">1</td>
+    <td>128</td>
+    <td>0.3%</td>
+    <td>128</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>MP3, 2-CH</td>
+    <td>100%</td>
+  </tr>
+</table>
+    <p class="legend">Average duration processed: 0:25:00</p>
+    <h3>Checked against <em>HLS Authoring Specification for Apple Devices</em></h3>
+    <h2>General requirements</h2>
+    <h3>Must Fix Issues</h3>
+    <h4>1. Stereo audio in AAC-LC, HE-AAC v1, or HE-AAC v2 format MUST be provided</h4>
+<ul style="list-style-type:disc">
+<li>Multivariant Playlist</li>
+</ul>
+    <h4>2. You MUST include the AVERAGE-BANDWIDTH attribute</h4>
+<ul style="list-style-type:disc">
+<li>Multivariant Playlist Stream Definition for All Variants</li>
+</ul>
+    <h4>3. The server MUST deliver playlists using gzip content-encoding</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+<li>Multivariant Playlist</li>
+</ul>
+    <h4>4. You MUST provide multiple bit rates of video</h4>
+<ul style="list-style-type:disc">
+<li>Multivariant Playlist</li>
+</ul>
+    <h4>5. MP3 is not a recommended audio format</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+</ul>
+    <h4>6. Supported stereo audio formats are: AAC-LC, HE-AAC v1, HE-AAC v2, USAC/xHE-AAC, Dolby Digital, Dolby Digital Plus, Dolby Atmos, FLAC, and Apple Lossless</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+</ul>
+    <h4>7. If EXT-X-ENDLIST is specified, then EXT-X-PLAYLIST-TYPE MUST also be specified</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+</ul>
+    <h3>Should Fix Issues</h3>
+    <h4>8. Captions SHOULD be provided with your streams to make content accessible to the deaf or hard of hearing.</h4>
+<ul style="list-style-type:disc">
+<li>Multivariant Playlist</li>
+</ul>
+    <h4>9. You SHOULD use the EXT-X-INDEPENDENT-SEGMENTS tag in the multivariant playlist</h4>
+<ul style="list-style-type:disc">
+<li>Multivariant Playlist</li>
+</ul>
+    <h4>10. You SHOULD support stream failover</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+</ul>
+    <h4>11. Content protection SHOULD follow the FairPlay Streaming (FPS) specification</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+</ul>
+    <h4>12. Target durations SHOULD be 6 seconds.</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+</ul>
+    <h2>Additional requirements for tvOS</h2>
+    <h3>Must Fix Issues</h3>
+    <h4>13. There MUST be no audio-only variants listed in the Multivariant playlist</h4>
+<ul style="list-style-type:disc">
+<li>All Variants</li>
+</ul>
+    <h3>Report Information</h3>
+<table>
+  <tr>
+    <td>MediaStreamValidator version:</td>
+    <td class="left">1.17 (593.5-220531)</td>
+  </tr>
+  <tr>
+    <td>Report generator version:</td>
+    <td class="left">1.17 (593.5-220531)</td>
+  </tr>
+  <tr>
+    <td>Report generation date:</td>
+    <td class="left">09/22/22 13:40:37</td>
+  </tr>
+  <tr>
+    <td>JSON format version:</td>
+    <td class="left">1.1</td>
+  </tr>
+  <tr>
+    <td>JSON data timestamp:</td>
+    <td class="left">09/22/22 13:38:56</td>
+  </tr>
+</table>
+<hr/>
+    <p class="legend">Note on tables: all bitrates are expressed in kb/s, IDs for default startup variants are highlighted in dark grey, entries annotated with an asterisk ('*') do not have a consistent value over the entire stream, entries in parentheses are from the multivariant playlist rather than media.</p>
+</body>
+</html>

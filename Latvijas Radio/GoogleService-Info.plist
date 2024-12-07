@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>376511770276-kmvqfrik0gp6hj85r18q800friatlg2d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.376511770276-kmvqfrik0gp6hj85r18q800friatlg2d</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>376511770276-4cuu3k1tqvllmitd3hiqnv19d69rn52b.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAHb9UfhJPv052JTXS1If5e2W6j_XPH7TQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>376511770276</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>lv.latvijasradio</string>
+	<key>PROJECT_ID</key>
+	<string>latvijas-radio-2d9b8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>latvijas-radio-2d9b8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:376511770276:ios:93154026f1ee3f19f5c031</string>
+</dict>
+</plist>

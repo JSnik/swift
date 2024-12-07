@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect With Facebook View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ConnectWithFacebookViewController" id="BYZ-38-t0r" customClass="ConnectWithFacebookViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33n-Ql-yVv" userLabel="buttonConnectWithFacebook" customClass="UIButtonTertiaryIconed" customModule="Latvijas_Radio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="52"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_facebook" title="connect_with_facebook"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="OzS-gM-IYe" userLabel="activityIndicator">
+                                <rect key="frame" x="197" y="40" width="20" height="20"/>
+                                <color key="color" name="red"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="33n-Ql-yVv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8OB-9q-FIL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="33n-Ql-yVv" secondAttribute="trailing" id="Mtu-MF-1FD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="33n-Ql-yVv" secondAttribute="bottom" id="eaM-Bt-s5Q"/>
+                            <constraint firstItem="OzS-gM-IYe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iMn-7L-nW4"/>
+                            <constraint firstItem="OzS-gM-IYe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sYd-8C-ZWd"/>
+                            <constraint firstItem="33n-Ql-yVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="va7-TV-y0X"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="100"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="OzS-gM-IYe" id="zhF-G4-n9L"/>
+                        <outlet property="buttonConnectWithFacebook" destination="33n-Ql-yVv" id="U1a-u8-Qje"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="33n-Ql-yVv">
+            <size key="intrinsicContentSize" width="225.5" height="34.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_facebook" width="19.125" height="19.009000778198242"/>
+        <namedColor name="red">
+            <color red="0.8784313725490196" green="0.0" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

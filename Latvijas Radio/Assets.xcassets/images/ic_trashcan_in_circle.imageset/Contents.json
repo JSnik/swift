@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_trashcan_in_circle.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

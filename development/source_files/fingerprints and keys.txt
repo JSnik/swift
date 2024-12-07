@@ -1,0 +1,65 @@
+We need the following fingerprints from final product (uploaded app) to be added inside Firebase console:
+
+--------------------------------------------------------
+- Firebase -> Android -> SHA1
+--------------------------------------------------------
+
+Needed for Google Sign-in.
+Get SHA1 fingerprint by running "signingReport" on android debug key (each machine that generates app will have a different debug key).
+Don't forget to use correct OAUTH2_WEB_CLIENT_ID variable when performing google sign-in.
+No need to update configuration file (google-services.json).
+
+p.s.
+Google sign-in caches logged in user REALLY hard.
+Even when fingerprint was removed, "Google Sign-in" permissions removed from Google account panel and debug app removed and release apk installed - google sign in STILL logged in successfully!
+Detecting changes might take up to even an hour.
+
+
+
+--------------------------------------------------------
+- Facebook Developers -> Settings -> Basic -> Key hashes
+--------------------------------------------------------
+
+They are needed only because a user might have Facebook app on their phone.
+If user performs sign-in with facebook while facebook app is installed, the communication will go through the facebook app, 
+and it does need key hash, otherwise it will throw "This app has no Android key hashes configured."
+
+We need 2 hashes: Development and Release Key hashes
+
+https://developers.facebook.com/docs/android/getting-started/
+
+When generating on Windows, it must NOT be generated from CMD - it will give wrong result.
+Use bash. Then, this command will give you the correct hash (ignore the warning):
+
+```
+// for debug
+keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
+
+
+// for release
+keytool -exportcert -alias hotelsdating -keystore D:\Projects\Android\hotelsdating-android\keystore.jks | openssl sha1 -binary | openssl base64
+// TODO: this command returns wrong key: i+NHU5FaJO9xdf5LNwnWFGpe+cY=
+// check below what it realy should be (we get the real hash either from facebook error message or from helper method in app)
+```
+
+Default password for android debug key is "android".
+
+Changes in app by adding/removing key hashes from facebook developer portal, are seen immediately.
+
+
+
+--------------------------------------------------------
+Current project keys:
+--------------------------------------------------------
+
+- Firebase -> Android -> SHA1
+
+Workplace PC's android debug keystore fingerprint: 5D:BE:9C:3D:7D:24:83:E6:49:EA:52:38:F0:FE:33:D8:5E:DF:D3:32
+Home PC's android debug keystore fingerprint: 7D:8B:EA:18:E9:CF:C9:B9:F2:6A:82:59:5B:4B:AE:84:2F:8B:04:E2
+Google Play Store managed keystore fingerprint (App signing key certificate): 4A:8F:24:9F:81:96:93:FA:E9:F5:A1:31:95:3F:BD:23:02:22:08:4A
+Google Play Store managed keystore fingerprint (Upload key certificate): 45:E1:F8:E0:50:5F:F6:A8:36:5B:74:40:B4:01:DD:F8:5F:1F:73:DD
+
+- Facebook Developers -> Settings -> Basic -> Key hashes
+
+Workplace PC's android debug keystore hash: Xb6cPX0kg+ZJ6lI48P4z2F7f0zI=
+Home PC's android debug keystore hash: 

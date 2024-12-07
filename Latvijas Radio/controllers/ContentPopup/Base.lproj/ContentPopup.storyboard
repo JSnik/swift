@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="futura_pt_book.otf">
+            <string>FuturaPT-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Content Popup View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ContentPopupViewController" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ContentPopupViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-Dm-nxD" userLabel="wrapperPopup">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHV-he-fGs" userLabel="wrapperScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" delaysContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLG-fv-nfV" userLabel="ScrollView" customClass="UIScrollViewTouchable" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-Vv-8oT" userLabel="wrapperScrollViewContent">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn6-m1-zqe" userLabel="textTitle" customClass="UILabelH1" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                <rect key="frame" x="24" y="24" width="366" height="24"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="24" id="JDm-BQ-evN"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <color key="highlightedColor" systemColor="labelColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFs-Z9-oi8" userLabel="buttonClose" customClass="UIButtonContentPopupClose" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                <rect key="frame" x="378" y="12" width="24" height="14"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                            </button>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="###" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TuO-d5-rgR" userLabel="textContent" customClass="UITextViewHtml" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                <rect key="frame" x="24" y="68.5" width="366" height="749.5"/>
+                                                                <color key="backgroundColor" name="lr-white"/>
+                                                                <color key="textColor" name="lr-black"/>
+                                                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="13"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="TuO-d5-rgR" firstAttribute="leading" secondItem="Skk-Vv-8oT" secondAttribute="leading" constant="24" id="EDF-uX-M94"/>
+                                                            <constraint firstAttribute="trailing" secondItem="TuO-d5-rgR" secondAttribute="trailing" constant="24" id="GB2-83-FQe"/>
+                                                            <constraint firstItem="tFs-Z9-oi8" firstAttribute="top" secondItem="Skk-Vv-8oT" secondAttribute="top" constant="12" id="GZI-mH-SPL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tFs-Z9-oi8" secondAttribute="trailing" constant="12" id="OOf-7E-tfb"/>
+                                                            <constraint firstItem="TuO-d5-rgR" firstAttribute="top" secondItem="Yn6-m1-zqe" secondAttribute="bottom" constant="24" id="VRF-Ta-TjV"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Yn6-m1-zqe" secondAttribute="trailing" constant="24" id="Vgh-QI-AF3"/>
+                                                            <constraint firstItem="Yn6-m1-zqe" firstAttribute="top" secondItem="Skk-Vv-8oT" secondAttribute="top" constant="24" id="VqT-Wq-S8u"/>
+                                                            <constraint firstAttribute="bottom" secondItem="TuO-d5-rgR" secondAttribute="bottom" id="WMp-cR-6Ok"/>
+                                                            <constraint firstItem="Yn6-m1-zqe" firstAttribute="leading" secondItem="Skk-Vv-8oT" secondAttribute="leading" constant="24" id="zqN-Cu-Ztg"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Skk-Vv-8oT" secondAttribute="bottom" id="A8S-h0-O8x"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Skk-Vv-8oT" secondAttribute="trailing" id="Cpd-El-Wuo"/>
+                                                    <constraint firstItem="Skk-Vv-8oT" firstAttribute="leading" secondItem="tLG-fv-nfV" secondAttribute="leading" id="aUI-qf-Zix"/>
+                                                    <constraint firstItem="Skk-Vv-8oT" firstAttribute="top" secondItem="tLG-fv-nfV" secondAttribute="top" id="v6z-BT-acP"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="tLG-fv-nfV" secondAttribute="bottom" id="iGr-lu-nrh"/>
+                                            <constraint firstItem="tLG-fv-nfV" firstAttribute="leading" secondItem="oHV-he-fGs" secondAttribute="leading" id="keb-r2-c31"/>
+                                            <constraint firstItem="Skk-Vv-8oT" firstAttribute="width" secondItem="oHV-he-fGs" secondAttribute="width" id="reT-qV-lGI"/>
+                                            <constraint firstAttribute="trailing" secondItem="tLG-fv-nfV" secondAttribute="trailing" id="rng-9M-bP8"/>
+                                            <constraint firstItem="Skk-Vv-8oT" firstAttribute="height" secondItem="oHV-he-fGs" secondAttribute="height" priority="250" id="tvO-dm-bjN"/>
+                                            <constraint firstItem="tLG-fv-nfV" firstAttribute="top" secondItem="oHV-he-fGs" secondAttribute="top" id="xtO-e8-I1M"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="oHV-he-fGs" firstAttribute="top" secondItem="e1c-Dm-nxD" secondAttribute="top" id="Dcw-dm-aKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="oHV-he-fGs" secondAttribute="trailing" id="Ja9-UY-GWk"/>
+                                    <constraint firstAttribute="bottom" secondItem="oHV-he-fGs" secondAttribute="bottom" id="Mil-H0-kAn"/>
+                                    <constraint firstItem="oHV-he-fGs" firstAttribute="leading" secondItem="e1c-Dm-nxD" secondAttribute="leading" id="Tvl-ha-CZ6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="lr-white"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e1c-Dm-nxD" secondAttribute="trailing" id="Jqd-OJ-yCC"/>
+                            <constraint firstItem="e1c-Dm-nxD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QLK-wJ-pcf"/>
+                            <constraint firstItem="e1c-Dm-nxD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WvM-4d-p2a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e1c-Dm-nxD" secondAttribute="bottom" id="mIG-Gh-bgH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonClose" destination="tFs-Z9-oi8" id="qTC-j3-TZw"/>
+                        <outlet property="textContent" destination="TuO-d5-rgR" id="efu-8b-jP0"/>
+                        <outlet property="textTitle" destination="Yn6-m1-zqe" id="ifd-vZ-f47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="lr-black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

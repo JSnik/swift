@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="futura_pt_medium.otf">
+            <string>FuturaPT-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="NotificationViewController" id="BYZ-38-t0r" customClass="NotificationViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSM-Ug-hsC" userLabel="wrapperNotification">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum " textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASD-1a-CfV" userLabel="textNotification">
+                                        <rect key="frame" x="16" y="8" width="356" height="798"/>
+                                        <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrC-rC-XQ6" userLabel="buttonNotification">
+                                        <rect key="frame" x="380" y="2" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="VlF-ou-71q"/>
+                                            <constraint firstAttribute="width" constant="34" id="vfk-zZ-5cb"/>
+                                        </constraints>
+                                        <color key="tintColor" name="white"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_cross_rounded"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="red"/>
+                                <constraints>
+                                    <constraint firstItem="ASD-1a-CfV" firstAttribute="leading" secondItem="pSM-Ug-hsC" secondAttribute="leading" constant="16" id="01X-dA-tsB"/>
+                                    <constraint firstItem="PrC-rC-XQ6" firstAttribute="leading" secondItem="ASD-1a-CfV" secondAttribute="trailing" constant="8" id="3lw-wk-e3R"/>
+                                    <constraint firstItem="PrC-rC-XQ6" firstAttribute="top" secondItem="pSM-Ug-hsC" secondAttribute="top" constant="2" id="Kxy-MX-QbL"/>
+                                    <constraint firstItem="ASD-1a-CfV" firstAttribute="top" secondItem="pSM-Ug-hsC" secondAttribute="top" constant="8" id="klV-ef-3gG"/>
+                                    <constraint firstAttribute="bottom" secondItem="ASD-1a-CfV" secondAttribute="bottom" constant="8" id="tOY-gU-ScV"/>
+                                    <constraint firstAttribute="trailing" secondItem="PrC-rC-XQ6" secondAttribute="trailing" id="x2U-vU-Ldf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pSM-Ug-hsC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0W7-N8-dnG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pSM-Ug-hsC" secondAttribute="bottom" id="b6B-Z7-hX7"/>
+                            <constraint firstItem="pSM-Ug-hsC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dyL-z9-ate"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pSM-Ug-hsC" secondAttribute="trailing" id="hXv-iD-ScH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_cross_rounded" width="8.9479999542236328" height="8.9479999542236328"/>
+        <namedColor name="red">
+            <color red="0.8784313725490196" green="0.0" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

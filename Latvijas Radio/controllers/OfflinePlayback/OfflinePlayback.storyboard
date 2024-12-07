@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="futura_pt_demi.otf">
+            <string>FuturaPT-Demi</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Offline Playback View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="OfflinePlaybackViewController" id="BYZ-38-t0r" customClass="OfflinePlaybackViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUs-2u-OUn" userLabel="MySafeArea">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY5-hc-36Q" userLabel="buttonBack" customClass="UIButtonQuinary" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="24" width="68.5" height="34.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="back">
+                                            <color key="titleColor" name="channel2"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_chevron_left" title="back" imagePadding="0.0"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLk-cS-wmD" userLabel="textTitle" customClass="UILabelBase" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="414" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="22"/>
+                                        <color key="textColor" name="gray4"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="no_internet_connection"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_no_connection" translatesAutoresizingMaskIntoConstraints="NO" id="F2h-T2-lDz" userLabel="imageNoConnection">
+                                        <rect key="frame" x="192" y="108.5" width="30" height="22"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-nM-CO6" userLabel="textEpisodes" customClass="UILabelH4" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="178.5" width="382" height="20.5"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="listen_to_downloads"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hs-ge-UKE" userLabel="separator">
+                                        <rect key="frame" x="0.0" y="209" width="414" height="1"/>
+                                        <color key="backgroundColor" name="gray2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Olg-t5-YH2"/>
+                                        </constraints>
+                                    </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjt-xJ-6Ld" userLabel="containerDownloadsCollection">
+                                        <rect key="frame" x="0.0" y="210" width="414" height="604"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <segue destination="UHv-av-P75" kind="embed" identifier="SegueEmbedEpisodesCollection" id="RuH-LD-tiq"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="puU-m9-mR6" userLabel="containerPlayerMini">
+                                        <rect key="frame" x="0.0" y="814" width="414" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dcz-vB-ZHe"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="ka5-TU-eoQ" kind="embed" identifier="SegueEmbedPlayerMini" id="g8Z-YK-ScK"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dLk-cS-wmD" firstAttribute="top" secondItem="FUs-2u-OUn" secondAttribute="top" constant="64" id="7qv-n3-wP0"/>
+                                    <constraint firstItem="F2h-T2-lDz" firstAttribute="top" secondItem="dLk-cS-wmD" secondAttribute="bottom" constant="16" id="8KD-Ro-o7s"/>
+                                    <constraint firstItem="pY5-hc-36Q" firstAttribute="top" secondItem="FUs-2u-OUn" secondAttribute="top" constant="24" id="C3b-dO-etL"/>
+                                    <constraint firstAttribute="trailing" secondItem="puU-m9-mR6" secondAttribute="trailing" id="LCT-dZ-UCd"/>
+                                    <constraint firstItem="puU-m9-mR6" firstAttribute="leading" secondItem="FUs-2u-OUn" secondAttribute="leading" id="LM7-Ag-sNR"/>
+                                    <constraint firstItem="qjt-xJ-6Ld" firstAttribute="top" secondItem="9Hs-ge-UKE" secondAttribute="bottom" id="Ntb-Jc-5ed"/>
+                                    <constraint firstItem="9Hs-ge-UKE" firstAttribute="leading" secondItem="FUs-2u-OUn" secondAttribute="leading" id="ZG1-1L-PkX"/>
+                                    <constraint firstItem="puU-m9-mR6" firstAttribute="top" secondItem="qjt-xJ-6Ld" secondAttribute="bottom" id="a4q-A5-xUh"/>
+                                    <constraint firstAttribute="trailing" secondItem="dLk-cS-wmD" secondAttribute="trailing" id="aMK-fF-WeX"/>
+                                    <constraint firstItem="9Hs-ge-UKE" firstAttribute="top" secondItem="e2W-nM-CO6" secondAttribute="bottom" constant="10" id="cVj-Hj-OZb"/>
+                                    <constraint firstItem="e2W-nM-CO6" firstAttribute="top" secondItem="F2h-T2-lDz" secondAttribute="bottom" constant="48" id="fdf-8l-gMT"/>
+                                    <constraint firstItem="qjt-xJ-6Ld" firstAttribute="leading" secondItem="FUs-2u-OUn" secondAttribute="leading" id="gUr-gy-X9P"/>
+                                    <constraint firstAttribute="bottom" secondItem="puU-m9-mR6" secondAttribute="bottom" constant="-50" id="hAP-w1-Dad"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Hs-ge-UKE" secondAttribute="trailing" id="hOt-uZ-u8H"/>
+                                    <constraint firstItem="pY5-hc-36Q" firstAttribute="leading" secondItem="FUs-2u-OUn" secondAttribute="leading" constant="8" id="hjz-RP-V0P"/>
+                                    <constraint firstItem="dLk-cS-wmD" firstAttribute="leading" secondItem="FUs-2u-OUn" secondAttribute="leading" id="jaM-fW-Ddi"/>
+                                    <constraint firstAttribute="trailing" secondItem="qjt-xJ-6Ld" secondAttribute="trailing" id="oxV-6V-vA5"/>
+                                    <constraint firstAttribute="trailing" secondItem="e2W-nM-CO6" secondAttribute="trailing" constant="16" id="u5z-j4-IkC"/>
+                                    <constraint firstItem="e2W-nM-CO6" firstAttribute="leading" secondItem="FUs-2u-OUn" secondAttribute="leading" constant="16" id="xqN-9Z-r17"/>
+                                    <constraint firstItem="F2h-T2-lDz" firstAttribute="centerX" secondItem="FUs-2u-OUn" secondAttribute="centerX" id="z8a-xJ-NAQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="lr-white"/>
+                        <constraints>
+                            <constraint firstItem="FUs-2u-OUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="71L-tL-ImC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FUs-2u-OUn" secondAttribute="bottom" id="HNy-Ce-OIP"/>
+                            <constraint firstItem="FUs-2u-OUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="W5W-k4-GCc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FUs-2u-OUn" secondAttribute="trailing" id="flY-xE-bba"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonBack" destination="pY5-hc-36Q" id="Qs7-rb-A9E"/>
+                        <outlet property="containerDownloadsCollection" destination="qjt-xJ-6Ld" id="eZg-Ne-r76"/>
+                        <outlet property="containerPlayerMini" destination="puU-m9-mR6" id="V0E-03-n3L"/>
+                        <outlet property="containerPlayerMiniBottomConstraint" destination="hAP-w1-Dad" id="MCt-TY-hWf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+        <!--EpisodesCollectionViewController-->
+        <scene sceneID="Su3-Sf-3p3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EpisodesCollection" referencedIdentifier="EpisodesCollectionViewController" id="UHv-av-P75" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suH-95-Hk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="96"/>
+        </scene>
+        <!--PlayerMiniViewController-->
+        <scene sceneID="jvB-6t-Zod">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerMini" referencedIdentifier="PlayerMiniViewController" id="ka5-TU-eoQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1J-gO-hP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="512"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_chevron_left" width="7.3610000610351562" height="11.777000427246094"/>
+        <image name="ic_no_connection" width="30.179000854492188" height="22.167999267578125"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.79199999570846558" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="channel2">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray2">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray4">
+            <color red="0.74117647058823533" green="0.74901960784313726" blue="0.75686274509803919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

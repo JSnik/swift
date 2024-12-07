@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Block Presentation Type3 View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DynamicBlockPresentationType3ViewController" id="BYZ-38-t0r" customClass="DynamicBlockPresentationType3ViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0F5-KS-qcP" userLabel="wrapperContent">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ci-MR-bi8" userLabel="textTitle" customClass="UILabelH4" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="32" width="382" height="330"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Zz-W4-aGY" userLabel="containerGenericPreviewsCollection">
+                                        <rect key="frame" x="0.0" y="372" width="414" height="220"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="Nyg-LY-RMO"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="cXz-an-PxW" kind="embed" identifier="SegueEmbedGenericPreviewsCollection" id="k1I-VI-cdp"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMP-Yp-a3F" userLabel="containerEpisodesPreviewsCollection">
+                                        <rect key="frame" x="0.0" y="592" width="414" height="190"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="190" id="h4E-zP-apY"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="O3B-vr-9TS" kind="embed" identifier="SegueEmbedEpisodesPreviewsCollection" id="tP3-yZ-f4d"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" name="lr-black-5"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1Zz-W4-aGY" secondAttribute="trailing" id="BJH-a3-TrK"/>
+                                    <constraint firstItem="6Ci-MR-bi8" firstAttribute="top" secondItem="0F5-KS-qcP" secondAttribute="top" constant="32" id="KnY-Ad-eiv"/>
+                                    <constraint firstItem="1Zz-W4-aGY" firstAttribute="leading" secondItem="0F5-KS-qcP" secondAttribute="leading" id="Ngo-eK-ZhU"/>
+                                    <constraint firstItem="6Ci-MR-bi8" firstAttribute="leading" secondItem="0F5-KS-qcP" secondAttribute="leading" constant="16" id="U83-Kl-UNq"/>
+                                    <constraint firstItem="gMP-Yp-a3F" firstAttribute="leading" secondItem="0F5-KS-qcP" secondAttribute="leading" id="Ucy-fq-UZy"/>
+                                    <constraint firstAttribute="bottom" secondItem="gMP-Yp-a3F" secondAttribute="bottom" priority="750" constant="32" id="b42-qT-Kh1"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Ci-MR-bi8" secondAttribute="trailing" constant="16" id="gCt-E6-gka"/>
+                                    <constraint firstAttribute="trailing" secondItem="gMP-Yp-a3F" secondAttribute="trailing" id="lTQ-EN-v6f"/>
+                                    <constraint firstItem="1Zz-W4-aGY" firstAttribute="top" secondItem="6Ci-MR-bi8" secondAttribute="bottom" constant="10" id="rB6-j6-MUa"/>
+                                    <constraint firstItem="gMP-Yp-a3F" firstAttribute="top" secondItem="1Zz-W4-aGY" secondAttribute="bottom" id="sdE-sV-bnz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0F5-KS-qcP" secondAttribute="bottom" id="HoH-o1-VaK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0F5-KS-qcP" secondAttribute="trailing" id="IfS-2e-jIb"/>
+                            <constraint firstItem="0F5-KS-qcP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nWp-tn-AsW"/>
+                            <constraint firstItem="0F5-KS-qcP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x7j-mT-PyO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerEpisodesPreviewsCollection" destination="gMP-Yp-a3F" id="EOL-nD-RoP"/>
+                        <outlet property="containerGenericPreviewsCollection" destination="1Zz-W4-aGY" id="w9I-H7-d3U"/>
+                        <outlet property="textTitle" destination="6Ci-MR-bi8" id="0DO-0d-21j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+        <!--GenericPreviewsCollectionViewController-->
+        <scene sceneID="1vA-NY-Uw9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GenericPreviewsCollection" referencedIdentifier="GenericPreviewsCollectionViewController" id="cXz-an-PxW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ilK-lA-XYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="76"/>
+        </scene>
+        <!--EpisodesPreviewsCollectionViewController-->
+        <scene sceneID="43n-Ba-PMy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EpisodesPreviewsCollection" referencedIdentifier="EpisodesPreviewsCollectionViewController" id="O3B-vr-9TS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jau-dg-7lo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="lr-black-5">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.05000000074505806" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

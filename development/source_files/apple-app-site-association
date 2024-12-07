@@ -1,0 +1,29 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "FSUTAYAPUF.lv.latvijasradio"
+                ],
+                "components": [
+                    {
+                        "/": "/registration-email-token-verification/*",
+                        "comment": "Matches any URL whose path starts with /registration-email-token-verification/"
+                    },
+                    {
+                        "/": "/password-reset-email-token-verification/*",
+                        "comment": "Matches any URL whose path starts with /password-reset-email-token-verification/"
+                    },
+                                        {
+                        "/": "/shared-episode",
+                        "comment": "Matches any URL whose path starts with /shared-episode"
+                    },
+                                        {
+                        "/": "/shared-livestream",
+                        "comment": "Matches any URL whose path starts with /shared-livestream"
+                    }
+                ]
+            }
+        ]
+    }
+}

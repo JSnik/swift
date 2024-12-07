@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Episodes Compact Draggable Collection View Controller-->
+        <scene sceneID="UCy-pu-bMb">
+            <objects>
+                <collectionViewController storyboardIdentifier="EpisodesCompactDraggableCollectionViewController" id="bj1-Jy-6hp" customClass="EpisodesCompactDraggableCollectionViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" id="DSn-Mu-zh3" customClass="UICollectionViewBase" customModule="Latvijas_Radio" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Cuz-x3-19m">
+                            <size key="itemSize" width="414" height="600"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EpisodesCompactDraggableCollectionViewCell" id="yPH-JF-6G0" customClass="EpisodesCompactDraggableCollectionViewCell" customModule="Latvijas_Radio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="109" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Ea-yN-Ogn">
+                                    <rect key="frame" x="0.0" y="0.0" width="109" height="61"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPA-yr-jx9" userLabel="wrapperItem">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="61"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dots" translatesAutoresizingMaskIntoConstraints="NO" id="tch-w9-3Af" userLabel="imageDragger">
+                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="61"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="54" id="d1Z-70-9dd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-cp-W6Q" userLabel="textBroadcastName" customClass="UILabelLabel5" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                    <rect key="frame" x="54" y="10" width="31" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY1-DE-wpA" userLabel="textTitle" customClass="UILabelLabel2" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                    <rect key="frame" x="54" y="30.5" width="31" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvK-tU-MAs" userLabel="borderBottom">
+                                                    <rect key="frame" x="0.0" y="60" width="109" height="1"/>
+                                                    <color key="backgroundColor" name="gray2"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="nyN-AL-LEA"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="QiN-cp-W6Q" secondAttribute="trailing" constant="24" id="8wQ-Cg-ZWH"/>
+                                                <constraint firstItem="tch-w9-3Af" firstAttribute="height" secondItem="YPA-yr-jx9" secondAttribute="height" id="D6J-Yu-kwg"/>
+                                                <constraint firstItem="tch-w9-3Af" firstAttribute="leading" secondItem="YPA-yr-jx9" secondAttribute="leading" id="L3U-ZC-NGs"/>
+                                                <constraint firstAttribute="bottom" secondItem="JY1-DE-wpA" secondAttribute="bottom" constant="10" id="OMG-Ce-uVY"/>
+                                                <constraint firstItem="JY1-DE-wpA" firstAttribute="leading" secondItem="tch-w9-3Af" secondAttribute="trailing" id="SgS-i3-scx"/>
+                                                <constraint firstItem="QiN-cp-W6Q" firstAttribute="leading" secondItem="tch-w9-3Af" secondAttribute="trailing" id="YqT-4p-hpa"/>
+                                                <constraint firstAttribute="trailing" secondItem="JY1-DE-wpA" secondAttribute="trailing" constant="24" id="b7f-dP-cqt"/>
+                                                <constraint firstItem="QiN-cp-W6Q" firstAttribute="top" secondItem="YPA-yr-jx9" secondAttribute="top" constant="10" id="fxU-gP-Dgn"/>
+                                                <constraint firstItem="JY1-DE-wpA" firstAttribute="top" secondItem="QiN-cp-W6Q" secondAttribute="bottom" id="jRw-zm-pJi"/>
+                                                <constraint firstItem="tch-w9-3Af" firstAttribute="top" secondItem="YPA-yr-jx9" secondAttribute="top" id="jsH-IP-nGs"/>
+                                                <constraint firstItem="AvK-tU-MAs" firstAttribute="leading" secondItem="YPA-yr-jx9" secondAttribute="leading" id="mek-H4-ILR"/>
+                                                <constraint firstAttribute="bottom" secondItem="AvK-tU-MAs" secondAttribute="bottom" id="p8A-zD-GPB"/>
+                                                <constraint firstAttribute="trailing" secondItem="AvK-tU-MAs" secondAttribute="trailing" id="v44-zj-2Hj"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="YPA-yr-jx9" firstAttribute="top" secondItem="8Ea-yN-Ogn" secondAttribute="top" id="aLo-WX-f6i"/>
+                                        <constraint firstAttribute="trailing" secondItem="YPA-yr-jx9" secondAttribute="trailing" id="gi7-ZR-A80"/>
+                                        <constraint firstAttribute="bottom" secondItem="YPA-yr-jx9" secondAttribute="bottom" id="uOK-NV-Kfb"/>
+                                        <constraint firstItem="YPA-yr-jx9" firstAttribute="leading" secondItem="8Ea-yN-Ogn" secondAttribute="leading" id="vzj-hQ-74R"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" name="lr-white"/>
+                                <connections>
+                                    <outlet property="imageDragger" destination="tch-w9-3Af" id="qQb-S1-cnX"/>
+                                    <outlet property="textBroadcastName" destination="QiN-cp-W6Q" id="rgR-8b-qYa"/>
+                                    <outlet property="textTitle" destination="JY1-DE-wpA" id="HKA-kY-tTU"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="bj1-Jy-6hp" id="J9n-u2-Xia"/>
+                            <outlet property="delegate" destination="bj1-Jy-6hp" id="u6I-yx-w8A"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1W-1V-277" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="-114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_dots" width="10.003000259399414" height="15.355999946594238"/>
+        <namedColor name="gray2">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

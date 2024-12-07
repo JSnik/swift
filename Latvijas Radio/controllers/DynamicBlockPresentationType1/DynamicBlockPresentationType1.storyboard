@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Covers Collection View Controller-->
+        <scene sceneID="Q9x-1s-ini">
+            <objects>
+                <collectionViewController storyboardIdentifier="CoversCollectionViewController" id="60H-mx-PmY" customClass="CoversCollectionViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" id="i7U-y2-jgL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="M3c-gR-V2w">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CoversCollectionViewCell" id="9Sl-Hq-Jtv" customClass="CoversCollectionViewCell" customModule="Latvijas_Radio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jV6-MM-HOQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPG-zG-5fi" userLabel="wrapperItem">
+                                            <rect key="frame" x="5" y="0.0" width="90" height="100"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fn-Pj-VHx" userLabel="frameLayout">
+                                                    <rect key="frame" x="5" y="0.0" width="80" height="100"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="9fn-Pj-VHx" firstAttribute="leading" secondItem="HPG-zG-5fi" secondAttribute="leading" constant="5" id="liM-OA-g3g"/>
+                                                <constraint firstAttribute="trailing" secondItem="9fn-Pj-VHx" secondAttribute="trailing" constant="5" id="n9o-D4-sFP"/>
+                                                <constraint firstItem="9fn-Pj-VHx" firstAttribute="top" secondItem="HPG-zG-5fi" secondAttribute="top" id="r4G-gs-vsk"/>
+                                                <constraint firstAttribute="bottom" secondItem="9fn-Pj-VHx" secondAttribute="bottom" id="yw7-mq-5V4"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="HPG-zG-5fi" firstAttribute="top" secondItem="jV6-MM-HOQ" secondAttribute="top" id="49P-YE-PK5"/>
+                                        <constraint firstAttribute="bottom" secondItem="HPG-zG-5fi" secondAttribute="bottom" id="NwQ-lC-8h7"/>
+                                        <constraint firstAttribute="trailing" secondItem="HPG-zG-5fi" secondAttribute="trailing" constant="5" id="iDV-tx-Faq"/>
+                                        <constraint firstItem="HPG-zG-5fi" firstAttribute="leading" secondItem="jV6-MM-HOQ" secondAttribute="leading" constant="5" id="sEn-Zc-U16"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="frameLayout" destination="9fn-Pj-VHx" id="2pI-YD-BoB"/>
+                                    <outlet property="wrapperItem" destination="HPG-zG-5fi" id="GyQ-ol-baa"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="60H-mx-PmY" id="pxj-tO-3qZ"/>
+                            <outlet property="delegate" destination="60H-mx-PmY" id="qFz-Du-yQP"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAg-JO-7bb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="96"/>
+        </scene>
+        <!--Dynamic Block Presentation Type1 View Controller-->
+        <scene sceneID="a5R-38-uHt">
+            <objects>
+                <viewController storyboardIdentifier="DynamicBlockPresentationType1ViewController" id="a6Q-Sx-ife" customClass="DynamicBlockPresentationType1ViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gHN-Y9-ppv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCw-yH-jw4" userLabel="wrapperContent">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV6-fS-WG0" userLabel="textTitle" customClass="UILabelH4" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="0.0" width="382" height="538"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="Aktuāli"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyh-76-Bdc" userLabel="containerCoverCollection">
+                                        <rect key="frame" x="0.0" y="558" width="414" height="260"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="260" id="bzr-G0-grG"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="60H-mx-PmY" kind="embed" identifier="SegueEmbedCoversCollection" id="78R-3b-0U3"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eyh-76-Bdc" firstAttribute="top" secondItem="zV6-fS-WG0" secondAttribute="bottom" constant="20" id="45M-BQ-RpD"/>
+                                    <constraint firstItem="zV6-fS-WG0" firstAttribute="top" secondItem="TCw-yH-jw4" secondAttribute="top" id="A01-7t-saE"/>
+                                    <constraint firstAttribute="bottom" secondItem="eyh-76-Bdc" secondAttribute="bottom" id="Fqo-Pw-f5D"/>
+                                    <constraint firstItem="zV6-fS-WG0" firstAttribute="leading" secondItem="TCw-yH-jw4" secondAttribute="leading" constant="16" id="Pg8-Ar-XFx"/>
+                                    <constraint firstItem="eyh-76-Bdc" firstAttribute="leading" secondItem="TCw-yH-jw4" secondAttribute="leading" id="SMe-NW-q3L"/>
+                                    <constraint firstAttribute="trailing" secondItem="eyh-76-Bdc" secondAttribute="trailing" id="Uh8-Eq-Ezr"/>
+                                    <constraint firstAttribute="trailing" secondItem="zV6-fS-WG0" secondAttribute="trailing" constant="16" id="cqc-ZX-ybL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6V1-c2-Bb0"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TCw-yH-jw4" firstAttribute="top" secondItem="6V1-c2-Bb0" secondAttribute="top" id="dag-ku-LUw"/>
+                            <constraint firstItem="TCw-yH-jw4" firstAttribute="leading" secondItem="6V1-c2-Bb0" secondAttribute="leading" id="kPM-px-rJw"/>
+                            <constraint firstItem="6V1-c2-Bb0" firstAttribute="bottom" secondItem="TCw-yH-jw4" secondAttribute="bottom" id="snA-uG-Cub"/>
+                            <constraint firstItem="6V1-c2-Bb0" firstAttribute="trailing" secondItem="TCw-yH-jw4" secondAttribute="trailing" id="wuj-NC-84A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textTitle" destination="zV6-fS-WG0" id="pkk-Us-lcd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kuu-Rx-iD9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="zV6-fS-WG0">
+            <size key="intrinsicContentSize" width="52" height="20.5"/>
+        </designable>
+    </designables>
+</document>

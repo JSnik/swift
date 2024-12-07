@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_speed.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

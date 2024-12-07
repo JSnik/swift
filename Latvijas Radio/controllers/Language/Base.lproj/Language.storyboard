@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Language View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LanguageViewController" id="BYZ-38-t0r" customClass="LanguageViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-o3-rWM">
+                                <rect key="frame" x="87" y="431" width="240" height="34.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33n-Ql-yVv" userLabel="buttonLanguageLatvian" customClass="UIButtonTertiary" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="34.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="gSH-sK-96o"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="###"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ3-Jl-RR5" userLabel="buttonLanguageRussian" customClass="UIButtonTertiary" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="0.0" width="90" height="34.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="P2E-Sp-BvK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="###"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="33n-Ql-yVv" firstAttribute="leading" secondItem="t0N-o3-rWM" secondAttribute="leading" id="BCx-Ww-QnA"/>
+                                    <constraint firstAttribute="trailing" secondItem="rQ3-Jl-RR5" secondAttribute="trailing" id="NDC-Zh-ayB"/>
+                                    <constraint firstItem="rQ3-Jl-RR5" firstAttribute="top" secondItem="t0N-o3-rWM" secondAttribute="top" id="WnT-tl-DX2"/>
+                                    <constraint firstAttribute="bottom" secondItem="rQ3-Jl-RR5" secondAttribute="bottom" id="hay-AF-g2d"/>
+                                    <constraint firstItem="33n-Ql-yVv" firstAttribute="top" secondItem="t0N-o3-rWM" secondAttribute="top" id="k09-te-1fi"/>
+                                    <constraint firstAttribute="width" constant="240" id="zX6-F7-wSn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="lr-white"/>
+                        <constraints>
+                            <constraint firstItem="t0N-o3-rWM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CF2-UF-ZQj"/>
+                            <constraint firstItem="t0N-o3-rWM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SxB-HA-eDr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLanguageLatvian" destination="33n-Ql-yVv" id="bnL-hX-XwI"/>
+                        <outlet property="buttonLanguageRussian" destination="rQ3-Jl-RR5" id="nsE-yT-Iw2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

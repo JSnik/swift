@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Episodes Previews Collection View Controller-->
+        <scene sceneID="fYi-gu-8hf">
+            <objects>
+                <collectionViewController storyboardIdentifier="EpisodesPreviewsCollectionViewController" id="KFo-tT-61Y" customClass="EpisodesPreviewsCollectionViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" id="c2C-2R-l8V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="wNt-sG-v8k">
+                            <size key="itemSize" width="300" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EpisodesPreviewsCollectionViewCell" id="651-57-Fdb" customClass="EpisodesPreviewsCollectionViewCell" customModule="Latvijas_Radio" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="166" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mcg-BJ-kKF">
+                                    <rect key="frame" x="0.0" y="0.0" width="166" height="198"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doa-ge-Tsz" userLabel="wrapperItem">
+                                            <rect key="frame" x="0.0" y="0.0" width="166" height="198"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPW-cd-1k8" userLabel="imageEpisodePreview">
+                                                    <rect key="frame" x="0.0" y="5" width="166" height="110"/>
+                                                    <color key="backgroundColor" name="black5percent"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="110" id="28X-b6-KZc"/>
+                                                        <constraint firstAttribute="width" constant="166" id="WJL-H5-f0N"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" id="SOE-mF-dcS" userLabel="wrapperText">
+                                                    <rect key="frame" x="5" y="123" width="156" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYb-pY-sZk" userLabel="textBroadcastTitle" customClass="UILabelLabel5" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="156" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p9-jZ-HFa" userLabel="textEpisodeTitle" customClass="UILabelLabel2" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="24.5" width="156" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="tYb-pY-sZk" firstAttribute="top" secondItem="SOE-mF-dcS" secondAttribute="top" id="4kt-1D-H7z"/>
+                                                        <constraint firstAttribute="trailing" secondItem="tYb-pY-sZk" secondAttribute="trailing" id="9od-t2-AX5"/>
+                                                        <constraint firstAttribute="height" constant="32" id="A2B-A4-Qwb" userLabel="64"/>
+                                                        <constraint firstItem="6p9-jZ-HFa" firstAttribute="leading" secondItem="SOE-mF-dcS" secondAttribute="leading" id="Apn-WB-HjQ"/>
+                                                        <constraint firstItem="tYb-pY-sZk" firstAttribute="leading" secondItem="SOE-mF-dcS" secondAttribute="leading" id="Pux-fA-irV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="6p9-jZ-HFa" secondAttribute="trailing" id="e3b-lE-btZ"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6p9-jZ-HFa" secondAttribute="bottom" id="fUx-wr-5Xq"/>
+                                                        <constraint firstItem="6p9-jZ-HFa" firstAttribute="top" secondItem="tYb-pY-sZk" secondAttribute="bottom" constant="4" id="zkW-Ag-vU8"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="SOE-mF-dcS" secondAttribute="bottom" constant="5" id="12w-wm-bhZ"/>
+                                                <constraint firstAttribute="width" constant="166" id="Mfi-GP-KFe"/>
+                                                <constraint firstItem="cPW-cd-1k8" firstAttribute="top" secondItem="doa-ge-Tsz" secondAttribute="top" constant="5" id="Mo8-Rx-yOS"/>
+                                                <constraint firstItem="SOE-mF-dcS" firstAttribute="leading" secondItem="doa-ge-Tsz" secondAttribute="leading" constant="5" id="Qwd-pt-lpt"/>
+                                                <constraint firstAttribute="trailing" secondItem="SOE-mF-dcS" secondAttribute="trailing" constant="5" id="msa-vm-w1D"/>
+                                                <constraint firstItem="cPW-cd-1k8" firstAttribute="leading" secondItem="doa-ge-Tsz" secondAttribute="leading" id="nQV-PE-YpS"/>
+                                                <constraint firstItem="SOE-mF-dcS" firstAttribute="top" secondItem="cPW-cd-1k8" secondAttribute="bottom" constant="8" id="npK-D7-4sr"/>
+                                                <constraint firstAttribute="trailing" secondItem="cPW-cd-1k8" secondAttribute="trailing" id="wRq-Y0-Fk0"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="doa-ge-Tsz" secondAttribute="bottom" id="M7c-jg-Y3G"/>
+                                        <constraint firstAttribute="trailing" secondItem="doa-ge-Tsz" secondAttribute="trailing" id="YWb-5q-Y4x"/>
+                                        <constraint firstItem="doa-ge-Tsz" firstAttribute="leading" secondItem="Mcg-BJ-kKF" secondAttribute="leading" id="qi8-fQ-88i"/>
+                                        <constraint firstItem="doa-ge-Tsz" firstAttribute="top" secondItem="Mcg-BJ-kKF" secondAttribute="top" id="wG2-ZJ-ocr"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="imageEpisodePreview" destination="cPW-cd-1k8" id="ju8-eO-gh6"/>
+                                    <outlet property="textBroadcastTitle" destination="tYb-pY-sZk" id="CpY-QN-lz9"/>
+                                    <outlet property="textEpisodeTitle" destination="6p9-jZ-HFa" id="3Dd-nz-Gr9"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="KFo-tT-61Y" id="vya-ei-0hY"/>
+                            <outlet property="delegate" destination="KFo-tT-61Y" id="eRc-Gn-y9i"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXZ-g8-rdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124.6376811594205" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="black5percent">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.05000000074505806" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

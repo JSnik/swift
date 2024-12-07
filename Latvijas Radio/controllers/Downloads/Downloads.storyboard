@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="futura_pt_medium.otf">
+            <string>FuturaPT-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Downloads View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DownloadsViewController" id="BYZ-38-t0r" customClass="DownloadsViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjt-xJ-6Ld" userLabel="containerDownloadsCollection">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="UHv-av-P75" kind="embed" identifier="SegueEmbedEpisodesCollection" id="RuH-LD-tiq"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvH-pd-DGt" userLabel="textTitle" customClass="UILabelBase" customModule="Latvijas_Radio" customModuleProvider="target">
+                                <rect key="frame" x="16" y="88" width="382" height="17"/>
+                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="13"/>
+                                <color key="textColor" name="gray3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="downloads_no_results_description"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="lr-white"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qjt-xJ-6Ld" secondAttribute="trailing" id="1lk-gZ-YIK"/>
+                            <constraint firstItem="qjt-xJ-6Ld" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sfe-pr-atb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MvH-pd-DGt" secondAttribute="trailing" constant="16" id="YC3-Qf-jRh"/>
+                            <constraint firstItem="MvH-pd-DGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aWB-cK-eAn"/>
+                            <constraint firstItem="MvH-pd-DGt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="c1i-UM-A2j"/>
+                            <constraint firstItem="qjt-xJ-6Ld" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vxt-qh-aPR"/>
+                            <constraint firstAttribute="bottom" secondItem="qjt-xJ-6Ld" secondAttribute="bottom" id="yt2-bI-Xtw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerDownloadsCollection" destination="qjt-xJ-6Ld" id="eZg-Ne-r76"/>
+                        <outlet property="textTitle" destination="MvH-pd-DGt" id="fcH-Mn-SHx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+        <!--EpisodesCollectionViewController-->
+        <scene sceneID="Su3-Sf-3p3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EpisodesCollection" referencedIdentifier="EpisodesCollectionViewController" id="UHv-av-P75" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="suH-95-Hk9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="gray3">
+            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

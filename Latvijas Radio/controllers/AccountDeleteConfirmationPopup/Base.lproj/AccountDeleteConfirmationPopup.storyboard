@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="futura_pt_medium.otf">
+            <string>FuturaPT-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Account Delete Confirmation Popup View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AccountDeleteConfirmationPopupViewController" modalPresentationStyle="overCurrentContext" id="BYZ-38-t0r" customClass="AccountDeleteConfirmationPopupViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-Dm-nxD" userLabel="wrapperPopup">
+                                <rect key="frame" x="67" y="390" width="280" height="116.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHV-he-fGs" userLabel="wrapperScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="116.5"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLG-fv-nfV" userLabel="ScrollView" customClass="UIScrollViewTouchable" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="116.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skk-Vv-8oT" userLabel="wrapperScrollViewContent">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="116.5"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jK9-Wf-FSJ" userLabel="wrapperHeader">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="26"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw6-H5-YPf" userLabel="textTitle" customClass="UILabelBase" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                        <rect key="frame" x="24" y="14" width="232" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
+                                                                        <color key="textColor" name="white"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="delete_account"/>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" name="red"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="aw6-H5-YPf" secondAttribute="bottom" constant="12" id="1HR-XQ-a3t"/>
+                                                                    <constraint firstItem="aw6-H5-YPf" firstAttribute="top" secondItem="jK9-Wf-FSJ" secondAttribute="top" constant="14" id="9yA-da-7FK"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="aw6-H5-YPf" secondAttribute="trailing" constant="24" id="hsR-ya-9zE"/>
+                                                                    <constraint firstItem="aw6-H5-YPf" firstAttribute="leading" secondItem="jK9-Wf-FSJ" secondAttribute="leading" constant="24" id="uxx-6x-Ojf"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn6-m1-zqe" userLabel="textDescription" customClass="UILabelP1" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                <rect key="frame" x="24" y="50" width="232" height="0.0"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="account_deletion_description"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnZ-c7-bVh" userLabel="wrapperBottom">
+                                                                <rect key="frame" x="0.0" y="74" width="280" height="34.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhu-2M-dK1" userLabel="buttonOk" customClass="UIButtonXI" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                        <rect key="frame" x="229.5" y="0.0" width="42.5" height="34.5"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="ok"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krf-D9-sJO" userLabel="buttonCancel" customClass="UIButtonXI" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                        <rect key="frame" x="155.5" y="0.0" width="74" height="34.5"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="cancel"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="krf-D9-sJO" secondAttribute="bottom" id="WPY-IK-bVq"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Qhu-2M-dK1" secondAttribute="bottom" id="YdM-gr-A2V"/>
+                                                                    <constraint firstItem="Qhu-2M-dK1" firstAttribute="top" secondItem="QnZ-c7-bVh" secondAttribute="top" id="c60-XW-5IZ"/>
+                                                                    <constraint firstItem="Qhu-2M-dK1" firstAttribute="leading" secondItem="krf-D9-sJO" secondAttribute="trailing" id="cdh-up-9i8"/>
+                                                                    <constraint firstItem="krf-D9-sJO" firstAttribute="top" secondItem="QnZ-c7-bVh" secondAttribute="top" id="gnH-cT-Sc0"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Qhu-2M-dK1" secondAttribute="trailing" constant="8" id="zJW-YW-fa1"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="QnZ-c7-bVh" firstAttribute="leading" secondItem="Skk-Vv-8oT" secondAttribute="leading" id="Ed4-9h-0bv"/>
+                                                            <constraint firstItem="jK9-Wf-FSJ" firstAttribute="leading" secondItem="Skk-Vv-8oT" secondAttribute="leading" id="KfK-Gb-Hdw"/>
+                                                            <constraint firstItem="jK9-Wf-FSJ" firstAttribute="top" secondItem="Skk-Vv-8oT" secondAttribute="top" id="TvG-Et-M6y"/>
+                                                            <constraint firstAttribute="trailing" secondItem="jK9-Wf-FSJ" secondAttribute="trailing" id="UHH-h8-YGw"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Yn6-m1-zqe" secondAttribute="trailing" constant="24" id="Vgh-QI-AF3"/>
+                                                            <constraint firstItem="Yn6-m1-zqe" firstAttribute="top" secondItem="jK9-Wf-FSJ" secondAttribute="bottom" constant="24" id="VqT-Wq-S8u"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QnZ-c7-bVh" secondAttribute="trailing" id="h9b-Ju-Lcs"/>
+                                                            <constraint firstItem="QnZ-c7-bVh" firstAttribute="top" secondItem="Yn6-m1-zqe" secondAttribute="bottom" constant="24" id="ucf-0n-xpF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QnZ-c7-bVh" secondAttribute="bottom" constant="8" id="vuj-Rd-qoh"/>
+                                                            <constraint firstItem="Yn6-m1-zqe" firstAttribute="leading" secondItem="Skk-Vv-8oT" secondAttribute="leading" constant="24" id="zqN-Cu-Ztg"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Skk-Vv-8oT" secondAttribute="bottom" id="A8S-h0-O8x"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Skk-Vv-8oT" secondAttribute="trailing" id="Cpd-El-Wuo"/>
+                                                    <constraint firstItem="Skk-Vv-8oT" firstAttribute="leading" secondItem="tLG-fv-nfV" secondAttribute="leading" id="aUI-qf-Zix"/>
+                                                    <constraint firstItem="Skk-Vv-8oT" firstAttribute="top" secondItem="tLG-fv-nfV" secondAttribute="top" id="v6z-BT-acP"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="tLG-fv-nfV" secondAttribute="bottom" id="iGr-lu-nrh"/>
+                                            <constraint firstItem="tLG-fv-nfV" firstAttribute="leading" secondItem="oHV-he-fGs" secondAttribute="leading" id="keb-r2-c31"/>
+                                            <constraint firstItem="Skk-Vv-8oT" firstAttribute="width" secondItem="oHV-he-fGs" secondAttribute="width" id="reT-qV-lGI"/>
+                                            <constraint firstAttribute="trailing" secondItem="tLG-fv-nfV" secondAttribute="trailing" id="rng-9M-bP8"/>
+                                            <constraint firstItem="Skk-Vv-8oT" firstAttribute="height" secondItem="oHV-he-fGs" secondAttribute="height" priority="250" id="tvO-dm-bjN"/>
+                                            <constraint firstItem="tLG-fv-nfV" firstAttribute="top" secondItem="oHV-he-fGs" secondAttribute="top" id="xtO-e8-I1M"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="lr-white"/>
+                                <constraints>
+                                    <constraint firstItem="oHV-he-fGs" firstAttribute="top" secondItem="e1c-Dm-nxD" secondAttribute="top" id="Dcw-dm-aKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="oHV-he-fGs" secondAttribute="trailing" id="Ja9-UY-GWk"/>
+                                    <constraint firstAttribute="bottom" secondItem="oHV-he-fGs" secondAttribute="bottom" id="Mil-H0-kAn"/>
+                                    <constraint firstItem="oHV-he-fGs" firstAttribute="leading" secondItem="e1c-Dm-nxD" secondAttribute="leading" id="Tvl-ha-CZ6"/>
+                                    <constraint firstAttribute="width" constant="280" id="jt2-lx-bgr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="lr-black-50"/>
+                        <constraints>
+                            <constraint firstItem="e1c-Dm-nxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mlb-A9-Lox"/>
+                            <constraint firstItem="e1c-Dm-nxD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mz2-U0-Oq0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonCancel" destination="krf-D9-sJO" id="aC7-nt-gtg"/>
+                        <outlet property="buttonOk" destination="Qhu-2M-dK1" id="Qsn-IF-sAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="lr-black-50">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="0.8784313725490196" green="0.0" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

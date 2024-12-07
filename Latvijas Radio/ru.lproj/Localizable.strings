@@ -1,0 +1,148 @@
+/*
+  Localizable.strings
+  Latvijas Radio
+
+  Created by Sandis Putnis on 13/12/2021.
+ 
+ !!! In android we have &amp;
+ !!! In iOS convert them to &
+  
+*/
+
+"network_error_generic" = "Ошибка при выполнении запроса";
+"network_error_no_connection" = "Нет подключениия к сети";
+"network_error_request_timed_out" = "Слишком длинный запрос";
+"network_error_authentication" = "Ошибка аутентификации";
+"network_error_server" = "Ошибка сервера";
+"network_error_during_request" = "Ошибка при подключении к сети";
+"network_error_unparseable" = "Ошибка обмена данными";
+
+"error_json_parse" = "Ошибка обмена данными";
+
+"email_is_already_in_use" = "Пользователь с таким е-мейлом уже зарегистрирован.";
+"invalid_credentials" = "Неверное имя пользователя или пароль";
+"verification_code_not_valid" = "Неправильный код верификации";
+"invalid_jwt_token" = "Сессия истекла, пожалуйста, войдите повторно.";
+"jwt_token_expired" = "Токен сессии истек, пожалуйста, войдите повторно.";
+"refresh_token_not_found" = "Токен авторизации не найден, пожалуйста, войдите повторно.";
+"broadcast_not_found" = "Программа не найдена";
+"user_not_found" = "Пользователь не найден";
+"episode_not_found" = "Эпизод не найден";
+
+"login" = "Войти без регистрации";
+"logout" = "Выйти";
+"or" = "или";
+"email" = "Е-мейл";
+"password" = "Пароль";
+"forgot_password" = "Забыл пароль";
+"connect" = "Войти";
+"connect_with_apple" = "Вход с Apple";
+"connect_with_facebook" = "Войти через Facebook";
+"connect_with_google" = "Войти через Google";
+"register" = "Зарегистрироваться";
+"sign_in_failed_description" = "Вход не удался. Проверьте свое интернет-соединение и попробуйте еще раз.";
+"registration" = "Регистрация";
+"name" = "Имя";
+"thank_you" = "Спасибо!";
+"registration_check_email_description" = "Чтобы завершить регистрацию, откройте в телефоне свою электронную почту и нажмите на полученную ссылку.";
+"forgot_password_check_email_description" = "Чтобы завершить обновление профиля, откройте в телефоне свою электронную почту и нажмите на полученную ссылку.";
+"reset_password" = "Изменить пароль";
+"send" = "Отправить";
+"enter_password" = "Введите пароль";
+"password_repeat" = "Пароль повторно";
+"save" = "Сохранить";
+"enter_new_password" = "Введите новый пароль";
+"new_password" = "Новый пароль";
+"new_password_repeat" = "Новый пароль повторно";
+"no_internet_connection" = "Нет интернет-соединения";
+"listen_to_downloads" = "Слушать скачанные программы";
+"start" = "Начало";
+"livestreams" = "Прямые эфиры";
+"broadcasts" = "Программы";
+"search" = "Поиск";
+"my_radio" = "Мое радио";
+"view_all" = "Смотреть все";
+"newest_episodes" = "Самые новые эпизоды";
+"episode" = "Эпизод";
+"livestream" = "Прямой эфир";
+"internet_channels" = "Интернет-каналы";
+"back" = "Назад";
+"add" = "Добавить";
+"remove" = "Убрать";
+"subscribe" = "Подписаться";
+"unsubscribe" = "Отменить подписку";
+"more_about_this_topic" = "Больше об этой теме";
+"broadcast_hosts" = "Создатели программы";
+"available_episodes" = "Доступные эпизоды";
+"episode_couldnt_be_downloaded" = "Эпизод не получилось скачать";
+"cant_access_downloaded_file" = "Не получилось найти скачанный файл";
+"share" = "Поделиться";
+"copy_link" = "Скопировать ссылку";
+"copied_to_clipboard" = "Ссылка помещена в буфер обмена";
+"call" = "Позвонить";
+"send_a_message" = "Отправить сообщение";
+"download" = "Скачать";
+"speed" = "Скорость";
+"autoplay" = "Автоматическое проигрывание";
+"your_message" = "Текст сообщения";
+"message_sent" = "Сообщение отправлено, спасибо!";
+"privacy_policy" = "Политика конфиденциальности";
+"try_again" = "Попробовать еще раз";
+"close" = "Закрыть";
+"categories" = "Категории";
+"channels" = "Каналы";
+"channel" = "Канал";
+"all_broadcasts" = "Все программы";
+"latest_news" = "Последние\nновости";
+"new_episodes" = "Новые эпизоды";
+"my_list" = "Мой список";
+"downloads" = "Скачивания";
+"subscribed_broadcasts" = "Программы, на которые я подписан";
+"settings" = "Настройки";
+"notifications" = "Оповещения";
+"language" = "Язык";
+"download_only_with_wifi" = "Скачивать только используя Wi-Fi подключение";
+"delete_completed_episodes" = "Автоматически стереть прослушанные эпизоды из \"Мой список\"";
+"support" = "Техническая поддержка";
+"message_text" = "Текст сообщения";
+"support_success_description_1" = "Спасибо!";
+"support_success_description_2" = "Письмо успешно отправлено.";
+"load_more" = "Загрузить больше";
+"category" = "Категория";
+"no_connection_to_wifi" = "Нет подключения к соединению Wifi";
+"newest_episodes_from_subscribed_broadcasts_no_results_description" = "Подпишитесь на программу,\nчтобы ее новейшие эпизоды появились здесь.";
+"subscribed_episodes_no_results_description_1" = "Добавьте эпизоды, нажав на ";
+"subscribed_episodes_no_results_description_2" = ",\nчтобы разместить их в вашем списке проигрывания.";
+"downloads_no_results_description" = "Скачайте эпизод,\nчтобы слушать его без привязки к сети.";
+"guest" = "Гость";
+"authenticate" = "Авторизоваться";
+"password_legend" = "Пароль должен состоять не менее чем из 8 символов";
+"download_started" = "Скачивание началось";
+"episode_downloaded_successfully" = "Эпизод успешно скачан";
+"receive_notification_description" = "Получать уведомления о новом эпизоды передачи по подписки";
+"facebook_registration_fail_no_email" = "К этому аккаунту в сети Facebook не привязан е-мейл. Просим использовать аккаунт, к которому привязан е-мейл, или выбрать другой способ.";
+"change_livestreams_order_in_dashboard" = "Изменить порядок прямого эфира в начальном разделе";
+"settings_saved" = "Настройки сохранены";
+"playback_timeout" = "Спящий режим";
+"turn_off" = "Выключить";
+"after_30m" = "Через 30м";
+"after_1h" = "Через 1ч";
+"after_1h30m" = "Через 1ч 30м";
+"daily_news" = "Ежедневные новости";
+"playlist" = "Плейлист";
+
+// Platform specific - Android
+// ..
+
+// Platform specific - iOS
+
+"version_colled" = "Версия: ";
+"new_episode_for_broadcast" = "Новый эпизод программы";
+"i_agree_to_tos_etc_underlined" = "Согласен с <u>политикой конфиденциальности.</u>";
+"playback_error_unknown" = "Проблема с воспроизведением. Убедитесь, что ваше устройство подключено к Интернету.";
+"ok" = "Ок";
+"cancel" = "Отмена";
+"delete_account" = "Удалить аккаунт";
+"account_deletion_description" = "Удаление аккаунта безвозвратно.\nВы действительно желаете удалить свой аккаунт и все связанные с ним данные?";
+"to_continue_authenticate" = "Чтобы продолжить, авторизуйтесь.";
+"loading" = "Загрузка...";

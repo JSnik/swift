@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Radio View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MyRadioViewController" id="BYZ-38-t0r" customClass="MyRadioViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmb-4h-rcV" userLabel="MySafeArea">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d8-lB-cLx" userLabel="wrapperScrollView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" delaysContentTouches="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPe-M3-eIx" userLabel="ScrollView" customClass="UIScrollViewCollaborative" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62v-qK-dzu" userLabel="wrapperScrollViewContent">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="942"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-iR-eAM" userLabel="textTitle" customClass="UILabelH1" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24" width="414" height="0.0"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="my_radio"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eW-a3-P5X" userLabel="buttonSettings" customClass="UIButtonGenericWithCustomBackground" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                <rect key="frame" x="358" y="16" width="48" height="48"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="48" id="DIk-hh-ca3"/>
+                                                                    <constraint firstAttribute="width" constant="48" id="fzj-WD-xTp"/>
+                                                                </constraints>
+                                                                <color key="tintColor" name="white"/>
+                                                                <inset key="contentEdgeInsets" minX="14" minY="14" maxX="14" maxY="14"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" image="ic_settings"/>
+                                                            </button>
+                                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac6-tH-Uad" userLabel="containerSubscribedBroadcasts">
+                                                                <rect key="frame" x="0.0" y="48" width="414" height="80"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="80" id="fbO-go-pvu"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <segue destination="XK2-h0-2W0" kind="embed" identifier="SegueEmbedDynamicBlockPresentationType3" id="U8D-E0-YW2"/>
+                                                                </connections>
+                                                            </containerView>
+                                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="f4W-vW-7tq" userLabel="subscribedBroadcastsActivityIndicator">
+                                                                <rect key="frame" x="0.0" y="48" width="414" height="80"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="80" id="ywe-5h-q9r"/>
+                                                                </constraints>
+                                                                <color key="color" name="red"/>
+                                                            </activityIndicatorView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-Ls-sw6" userLabel="wrapperContent">
+                                                                <rect key="frame" x="0.0" y="128" width="414" height="814"/>
+                                                                <subviews>
+                                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-87-Pa9" userLabel="containerTabsNavigation">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" priority="251" constant="100" id="NGk-6Z-9WG"/>
+                                                                        </constraints>
+                                                                        <connections>
+                                                                            <segue destination="ehu-FS-FuN" kind="embed" identifier="SegueEmbedMyRadioTabsNavigation" id="5W8-Fu-OW5"/>
+                                                                        </connections>
+                                                                    </containerView>
+                                                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdp-A5-HcB" userLabel="containerTabsContent">
+                                                                        <rect key="frame" x="0.0" y="100" width="414" height="714"/>
+                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <connections>
+                                                                            <segue destination="29E-QP-AuO" kind="embed" identifier="SegueEmbedMyRadioTabsPage" id="P4p-xV-ilL"/>
+                                                                        </connections>
+                                                                    </containerView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="hdp-A5-HcB" secondAttribute="trailing" id="QtP-fj-YwA"/>
+                                                                    <constraint firstItem="Eds-87-Pa9" firstAttribute="top" secondItem="ebm-Ls-sw6" secondAttribute="top" id="Rbt-wp-1X1"/>
+                                                                    <constraint firstItem="hdp-A5-HcB" firstAttribute="leading" secondItem="ebm-Ls-sw6" secondAttribute="leading" id="SqS-5k-vvM"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="hdp-A5-HcB" secondAttribute="bottom" id="a8u-de-KRQ"/>
+                                                                    <constraint firstItem="hdp-A5-HcB" firstAttribute="top" secondItem="Eds-87-Pa9" secondAttribute="bottom" id="cCB-C4-Ism"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Eds-87-Pa9" secondAttribute="trailing" id="gKQ-uz-Y6e"/>
+                                                                    <constraint firstItem="Eds-87-Pa9" firstAttribute="leading" secondItem="ebm-Ls-sw6" secondAttribute="leading" id="ihj-TI-S3b"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="8eW-a3-P5X" secondAttribute="trailing" constant="8" id="2t6-Li-eTb"/>
+                                                            <constraint firstItem="ac6-tH-Uad" firstAttribute="top" secondItem="fwh-iR-eAM" secondAttribute="bottom" constant="24" id="70o-zM-0S7"/>
+                                                            <constraint firstItem="8eW-a3-P5X" firstAttribute="top" secondItem="62v-qK-dzu" secondAttribute="top" constant="16" id="AjU-Np-vOt"/>
+                                                            <constraint firstItem="ac6-tH-Uad" firstAttribute="leading" secondItem="62v-qK-dzu" secondAttribute="leading" id="GcB-cv-ZZF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ebm-Ls-sw6" secondAttribute="trailing" id="Gqs-vD-9Fi"/>
+                                                            <constraint firstItem="fwh-iR-eAM" firstAttribute="top" secondItem="62v-qK-dzu" secondAttribute="top" constant="24" id="RMK-Dw-2cS"/>
+                                                            <constraint firstItem="f4W-vW-7tq" firstAttribute="leading" secondItem="62v-qK-dzu" secondAttribute="leading" id="Rew-dX-1h8"/>
+                                                            <constraint firstItem="ebm-Ls-sw6" firstAttribute="leading" secondItem="62v-qK-dzu" secondAttribute="leading" id="SFE-KQ-XNB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="ebm-Ls-sw6" secondAttribute="bottom" id="VRb-Em-CZF"/>
+                                                            <constraint firstItem="ebm-Ls-sw6" firstAttribute="top" secondItem="ac6-tH-Uad" secondAttribute="bottom" id="aAQ-6w-dut"/>
+                                                            <constraint firstItem="f4W-vW-7tq" firstAttribute="top" secondItem="ac6-tH-Uad" secondAttribute="top" id="ekl-mV-6ar"/>
+                                                            <constraint firstItem="fwh-iR-eAM" firstAttribute="leading" secondItem="62v-qK-dzu" secondAttribute="leading" id="fgM-V8-w1S"/>
+                                                            <constraint firstAttribute="trailing" secondItem="fwh-iR-eAM" secondAttribute="trailing" id="kwd-St-iPs"/>
+                                                            <constraint firstAttribute="trailing" secondItem="f4W-vW-7tq" secondAttribute="trailing" id="rHz-1s-AwK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ac6-tH-Uad" secondAttribute="trailing" id="wbK-k0-fbb"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="62v-qK-dzu" secondAttribute="bottom" id="MnJ-qR-V6d"/>
+                                                    <constraint firstItem="62v-qK-dzu" firstAttribute="leading" secondItem="uPe-M3-eIx" secondAttribute="leading" id="Nfd-9e-Q6Z"/>
+                                                    <constraint firstItem="62v-qK-dzu" firstAttribute="top" secondItem="uPe-M3-eIx" secondAttribute="top" id="UP9-XA-Dsz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="62v-qK-dzu" secondAttribute="trailing" id="fWv-OL-4Qu"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="uPe-M3-eIx" firstAttribute="leading" secondItem="6d8-lB-cLx" secondAttribute="leading" id="3tb-Fi-R8A"/>
+                                            <constraint firstAttribute="bottom" secondItem="uPe-M3-eIx" secondAttribute="bottom" id="GkR-M2-bGs"/>
+                                            <constraint firstItem="62v-qK-dzu" firstAttribute="height" secondItem="6d8-lB-cLx" secondAttribute="height" priority="250" id="MQs-kI-Jda"/>
+                                            <constraint firstItem="uPe-M3-eIx" firstAttribute="top" secondItem="6d8-lB-cLx" secondAttribute="top" id="MzV-d0-WKT"/>
+                                            <constraint firstItem="62v-qK-dzu" firstAttribute="width" secondItem="6d8-lB-cLx" secondAttribute="width" id="TcJ-CW-5Ct"/>
+                                            <constraint firstAttribute="trailing" secondItem="uPe-M3-eIx" secondAttribute="trailing" id="cAm-rV-pRP"/>
+                                            <constraint firstItem="ebm-Ls-sw6" firstAttribute="height" secondItem="6d8-lB-cLx" secondAttribute="height" id="gvY-7y-fdT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6d8-lB-cLx" secondAttribute="trailing" id="HRp-kh-Xcj"/>
+                                    <constraint firstItem="6d8-lB-cLx" firstAttribute="top" secondItem="pmb-4h-rcV" secondAttribute="top" id="YVq-ur-Iv7"/>
+                                    <constraint firstAttribute="bottom" secondItem="6d8-lB-cLx" secondAttribute="bottom" id="e43-kz-uJy"/>
+                                    <constraint firstItem="6d8-lB-cLx" firstAttribute="leading" secondItem="pmb-4h-rcV" secondAttribute="leading" id="mSp-x9-KyS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="lr-white"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pmb-4h-rcV" secondAttribute="bottom" id="4rj-dp-8c4"/>
+                            <constraint firstItem="pmb-4h-rcV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9VQ-sX-aaN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pmb-4h-rcV" secondAttribute="trailing" id="NTR-Zt-V8G"/>
+                            <constraint firstItem="pmb-4h-rcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QRt-h2-IAo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonSettings" destination="8eW-a3-P5X" id="Zch-Xb-ppa"/>
+                        <outlet property="containerSubscribedBroadcasts" destination="ac6-tH-Uad" id="xy9-Vl-tP2"/>
+                        <outlet property="containerSubscribedBroadcastsHeightConstraint" destination="fbO-go-pvu" id="eJa-Hh-gSk"/>
+                        <outlet property="mainScrollView" destination="uPe-M3-eIx" id="jI2-VB-ECN"/>
+                        <outlet property="subscribedBroadcastsActivityIndicator" destination="f4W-vW-7tq" id="6Lc-cr-IOY"/>
+                        <outlet property="textTitle" destination="fwh-iR-eAM" id="VAM-XG-Niy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+        <!--DynamicBlockPresentationType3ViewController-->
+        <scene sceneID="bBE-IT-s56">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DynamicBlockPresentationType3" referencedIdentifier="DynamicBlockPresentationType3ViewController" id="XK2-h0-2W0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCp-a3-5gV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="78"/>
+        </scene>
+        <!--My Radio Tabs Navigation View Controller-->
+        <scene sceneID="EMr-tX-2US">
+            <objects>
+                <viewController id="ehu-FS-FuN" customClass="MyRadioTabsNavigationViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9BF-T7-eXz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V8K-oL-dUh" userLabel="wrapperNavigation">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cqf-E3-Oi5" userLabel="navigationItemNewEpisodes">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCm-Yd-ZDL" userLabel="buttonNewEpisodes" customClass="UIButtonIBCustomizable" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="new_episodes">
+                                                    <fontDescription key="titleFontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="13"/>
+                                                    <color key="baseForegroundColor" name="gray3"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RCm-Yd-ZDL" secondAttribute="trailing" id="WF7-uh-WFe"/>
+                                            <constraint firstItem="RCm-Yd-ZDL" firstAttribute="top" secondItem="Cqf-E3-Oi5" secondAttribute="top" id="cRl-ar-aMY"/>
+                                            <constraint firstAttribute="bottom" secondItem="RCm-Yd-ZDL" secondAttribute="bottom" id="hZU-eX-7Ae"/>
+                                            <constraint firstItem="RCm-Yd-ZDL" firstAttribute="leading" secondItem="Cqf-E3-Oi5" secondAttribute="leading" id="zMa-un-jqk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvS-hp-1Hg" userLabel="navigationItemMyList">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnw-GK-vGJ" userLabel="buttonMyList" customClass="UIButtonIBCustomizable" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="my_list">
+                                                    <fontDescription key="titleFontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="13"/>
+                                                    <color key="baseForegroundColor" name="gray3"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="lnw-GK-vGJ" firstAttribute="top" secondItem="dvS-hp-1Hg" secondAttribute="top" id="6ji-KD-0t1"/>
+                                            <constraint firstAttribute="bottom" secondItem="lnw-GK-vGJ" secondAttribute="bottom" id="SPp-Vr-qyT"/>
+                                            <constraint firstItem="lnw-GK-vGJ" firstAttribute="leading" secondItem="dvS-hp-1Hg" secondAttribute="leading" id="XRg-Gd-4qz"/>
+                                            <constraint firstAttribute="trailing" secondItem="lnw-GK-vGJ" secondAttribute="trailing" id="uhZ-uL-EqL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9x-IX-sGh" userLabel="navigationItemDownloads">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnK-Na-baC" userLabel="buttonDownloads" customClass="UIButtonIBCustomizable" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="downloads">
+                                                    <fontDescription key="titleFontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="13"/>
+                                                    <color key="baseForegroundColor" name="gray3"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="uppercase" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nnK-Na-baC" firstAttribute="leading" secondItem="u9x-IX-sGh" secondAttribute="leading" id="Cwx-Gm-Wdp"/>
+                                            <constraint firstAttribute="bottom" secondItem="nnK-Na-baC" secondAttribute="bottom" id="Z2V-Qt-fD5"/>
+                                            <constraint firstItem="nnK-Na-baC" firstAttribute="top" secondItem="u9x-IX-sGh" secondAttribute="top" id="klP-J7-Vwc"/>
+                                            <constraint firstAttribute="trailing" secondItem="nnK-Na-baC" secondAttribute="trailing" id="m0l-j8-2GA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="WJS-Jx-I8C"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-vD-Fr0" userLabel="borderIndicator">
+                                <rect key="frame" x="0.0" y="-39" width="138" height="4"/>
+                                <color key="backgroundColor" name="red"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="63O-cN-iE4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEh-Z1-3Eh" userLabel="borderBottom">
+                                <rect key="frame" x="0.0" y="-35" width="414" height="1"/>
+                                <color key="backgroundColor" name="lr-black"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="q0L-wT-H4H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UIs-cM-knt"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="sEh-Z1-3Eh" secondAttribute="bottom" id="DCd-td-Byb"/>
+                            <constraint firstItem="1rB-vD-Fr0" firstAttribute="width" secondItem="Cqf-E3-Oi5" secondAttribute="width" id="KPG-uG-WTC"/>
+                            <constraint firstAttribute="bottom" secondItem="V8K-oL-dUh" secondAttribute="bottom" id="UWq-MO-iMJ"/>
+                            <constraint firstItem="V8K-oL-dUh" firstAttribute="top" secondItem="9BF-T7-eXz" secondAttribute="top" id="VMr-RW-bsO"/>
+                            <constraint firstAttribute="trailing" secondItem="V8K-oL-dUh" secondAttribute="trailing" id="aMc-4K-qjH"/>
+                            <constraint firstAttribute="trailing" secondItem="sEh-Z1-3Eh" secondAttribute="trailing" id="csF-zs-A31"/>
+                            <constraint firstItem="sEh-Z1-3Eh" firstAttribute="leading" secondItem="9BF-T7-eXz" secondAttribute="leading" id="fbm-MG-hgS"/>
+                            <constraint firstItem="1rB-vD-Fr0" firstAttribute="leading" secondItem="9BF-T7-eXz" secondAttribute="leading" id="nd9-zE-9Y8"/>
+                            <constraint firstItem="V8K-oL-dUh" firstAttribute="leading" secondItem="9BF-T7-eXz" secondAttribute="leading" id="s7d-up-JuW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1rB-vD-Fr0" secondAttribute="bottom" constant="1" id="vbp-zh-bMT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="borderIndicatorLeadingConstraint" destination="nd9-zE-9Y8" id="AQG-dP-71n"/>
+                        <outlet property="buttonDownloads" destination="nnK-Na-baC" id="5lF-9F-UD5"/>
+                        <outlet property="buttonMyList" destination="lnw-GK-vGJ" id="8hu-Zg-zBd"/>
+                        <outlet property="buttonNewEpisodes" destination="RCm-Yd-ZDL" id="zro-t9-LoD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJm-sy-FdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="250"/>
+        </scene>
+        <!--My Radio Tabs Page View Controller-->
+        <scene sceneID="cJO-zn-Pqb">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="29E-QP-AuO" customClass="MyRadioTabsPageViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lE-O7-Nnq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="781"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_settings" width="20" height="20"/>
+        <namedColor name="gray3">
+            <color red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="0.8784313725490196" green="0.0" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="futura_pt_medium.otf">
+            <string>FuturaPT-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Player Large View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PlayerLargeViewController" id="BYZ-38-t0r" customClass="PlayerLargeViewController" customModule="Latvijas_Radio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX8-jc-zNJ" userLabel="MySafeArea">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7m-E5-0o3" userLabel="buttonBack" customClass="UIButtonQuinary" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="24" width="68.5" height="34.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="back">
+                                            <color key="titleColor" name="channel2"/>
+                                        </state>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_chevron_left" title="back" imagePadding="0.0"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRH-Fk-kpx" userLabel="wrapperMediaImageAndControls">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="200"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMn-jh-6iy" userLabel="wrapperMediaImage">
+                                                <rect key="frame" x="107" y="0.0" width="200" height="200"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dgt-d1-N3T" userLabel="imageMedia">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                        <color key="backgroundColor" name="black5percent"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Dgt-d1-N3T" secondAttribute="bottom" id="BwR-fQ-tEf"/>
+                                                    <constraint firstAttribute="width" constant="200" id="Qbf-4y-0Va"/>
+                                                    <constraint firstItem="Dgt-d1-N3T" firstAttribute="leading" secondItem="SMn-jh-6iy" secondAttribute="leading" id="Tia-2W-VZd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Dgt-d1-N3T" secondAttribute="trailing" id="cFM-Ft-Jyp"/>
+                                                    <constraint firstAttribute="height" constant="200" id="gnI-Gj-lId"/>
+                                                    <constraint firstItem="Dgt-d1-N3T" firstAttribute="top" secondItem="SMn-jh-6iy" secondAttribute="top" id="kkS-tA-azE"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="SMn-jh-6iy" secondAttribute="bottom" id="LoS-5B-l9d"/>
+                                            <constraint firstItem="SMn-jh-6iy" firstAttribute="centerX" secondItem="MRH-Fk-kpx" secondAttribute="centerX" id="bh7-W7-FvA"/>
+                                            <constraint firstItem="SMn-jh-6iy" firstAttribute="top" secondItem="MRH-Fk-kpx" secondAttribute="top" id="brg-SS-qLO"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JY-bk-IHk" userLabel="buttonShare" customClass="UIButtonGenericWithCustomBackground" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="358" y="16" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="2ih-LY-0FE"/>
+                                            <constraint firstAttribute="height" constant="40" id="zaJ-sK-LIV"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_share_default"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="gray"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WG3-8N-wee" userLabel="buttonSendMessage" customClass="UIButtonGenericWithCustomBackground" customModule="Latvijas_Radio" customModuleProvider="target">
+                                        <rect key="frame" x="310" y="16" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="Lvt-OA-cXc"/>
+                                            <constraint firstAttribute="height" constant="40" id="a2e-2p-3Mu"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_message"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="gray"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUb-H6-13g" userLabel="wrapperOuterTextualInfo">
+                                        <rect key="frame" x="32" y="288" width="350" height="316"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gY-hr-cg7" userLabel="wrapperTextualInfo">
+                                                <rect key="frame" x="0.0" y="113.5" width="350" height="89.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qrx-fM-Qdg" userLabel="wrapperChannelInfo">
+                                                        <rect key="frame" x="12" y="0.0" width="326" height="50"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Voh-2Y-u2q" userLabel="imageChannel">
+                                                                <rect key="frame" x="0.0" y="17" width="16" height="16"/>
+                                                                <color key="backgroundColor" name="black5percent"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="16" id="KEC-Qe-dGD"/>
+                                                                    <constraint firstAttribute="height" constant="16" id="zrV-zv-DZQ"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih8-10-rXc" userLabel="wrapperTextCategory">
+                                                                <rect key="frame" x="16" y="0.0" width="310" height="50"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-TK-pPd" userLabel="textCategory" customClass="UILabelLabel5" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                                        <rect key="frame" x="10" y="0.0" width="274" height="50"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" name="black"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="###"/>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="Yhw-TK-pPd" secondAttribute="bottom" id="IoX-8V-tcZ"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Yhw-TK-pPd" secondAttribute="trailing" constant="26" id="Lip-Eh-RPA"/>
+                                                                    <constraint firstItem="Yhw-TK-pPd" firstAttribute="top" secondItem="Ih8-10-rXc" secondAttribute="top" id="e3X-BI-KbM"/>
+                                                                    <constraint firstItem="Yhw-TK-pPd" firstAttribute="leading" secondItem="Ih8-10-rXc" secondAttribute="leading" constant="10" id="ggg-9b-805"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59S-fx-9pd" userLabel="textTitle">
+                                                        <rect key="frame" x="0.0" y="66" width="350" height="23.5"/>
+                                                        <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="18"/>
+                                                        <color key="textColor" name="lr-black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="59S-fx-9pd" firstAttribute="leading" secondItem="0gY-hr-cg7" secondAttribute="leading" id="3He-NW-cSX"/>
+                                                    <constraint firstAttribute="bottom" secondItem="59S-fx-9pd" secondAttribute="bottom" id="E8N-gZ-Ahx"/>
+                                                    <constraint firstItem="Qrx-fM-Qdg" firstAttribute="top" secondItem="0gY-hr-cg7" secondAttribute="top" id="GAM-Qu-6gL"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qrx-fM-Qdg" secondAttribute="trailing" id="JWX-6d-9WR"/>
+                                                    <constraint firstItem="59S-fx-9pd" firstAttribute="top" secondItem="Qrx-fM-Qdg" secondAttribute="bottom" constant="16" id="M65-qE-B6F"/>
+                                                    <constraint firstItem="Qrx-fM-Qdg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0gY-hr-cg7" secondAttribute="leading" id="ahx-EB-cFt"/>
+                                                    <constraint firstItem="Qrx-fM-Qdg" firstAttribute="centerX" secondItem="0gY-hr-cg7" secondAttribute="centerX" id="qPx-aT-tE2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="59S-fx-9pd" secondAttribute="trailing" id="zeq-15-HmP"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="0gY-hr-cg7" secondAttribute="trailing" id="0k9-EV-eh6"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0gY-hr-cg7" secondAttribute="bottom" id="EZ7-4m-tLb"/>
+                                            <constraint firstItem="0gY-hr-cg7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eUb-H6-13g" secondAttribute="top" id="Pet-1N-jHb"/>
+                                            <constraint firstItem="0gY-hr-cg7" firstAttribute="leading" secondItem="eUb-H6-13g" secondAttribute="leading" id="f27-7w-Mb7"/>
+                                            <constraint firstItem="0gY-hr-cg7" firstAttribute="centerY" secondItem="eUb-H6-13g" secondAttribute="centerY" id="jxB-Kr-ec5"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xiS-KH-mDE" userLabel="wrapperPlaybackControls">
+                                        <rect key="frame" x="57" y="604" width="300" height="76"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyB-fw-Lps" userLabel="wrapperButtonDownload">
+                                                <rect key="frame" x="0.0" y="14" width="48" height="48"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKs-r6-gaQ" userLabel="buttonDownload" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="48" id="E5d-wd-xrA"/>
+                                                            <constraint firstAttribute="height" constant="48" id="ymJ-M0-bSe"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="black"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ic_download_default"/>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5n-Rn-Zc4" userLabel="downloadProgress" customClass="CustomProgressView" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="17" y="31" width="14" height="2"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="2" id="Vbu-q7-uXc"/>
+                                                            <constraint firstAttribute="width" constant="14" id="rXb-2K-k2f"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="barColor">
+                                                                <color key="value" name="black"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="kKs-r6-gaQ" firstAttribute="bottom" secondItem="G5n-Rn-Zc4" secondAttribute="bottom" constant="15" id="5dP-Kq-Y8t"/>
+                                                    <constraint firstItem="kKs-r6-gaQ" firstAttribute="leading" secondItem="yyB-fw-Lps" secondAttribute="leading" id="5u6-3y-rDR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kKs-r6-gaQ" secondAttribute="trailing" id="FvS-Mw-BLd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kKs-r6-gaQ" secondAttribute="bottom" id="K09-ru-tKD"/>
+                                                    <constraint firstItem="G5n-Rn-Zc4" firstAttribute="leading" secondItem="kKs-r6-gaQ" secondAttribute="leading" constant="17" id="WlW-6y-MYi"/>
+                                                    <constraint firstItem="kKs-r6-gaQ" firstAttribute="top" secondItem="yyB-fw-Lps" secondAttribute="top" id="pfd-SS-asP"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vj-fM-l8J" userLabel="wrapperButtons">
+                                                <rect key="frame" x="52" y="14" width="56" height="48"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gz5-Pu-KRB" userLabel="buttonPlaybackStepBackward" customClass="UIButtonGenericWithCustomBackground" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="0.0" width="48" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="48" id="H13-n8-7L8"/>
+                                                            <constraint firstAttribute="height" constant="48" id="OaX-5b-Uvj"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ic_rewind_15"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JW-GX-fIQ" userLabel="buttonGoToPrevMedia" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="0.0" width="48" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="6sm-bK-LmB"/>
+                                                            <constraint firstAttribute="width" constant="48" id="gHo-Go-snw"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ic_skip_to_previous"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="gz5-Pu-KRB" secondAttribute="trailing" id="9fG-WZ-339"/>
+                                                    <constraint firstItem="gz5-Pu-KRB" firstAttribute="top" secondItem="1Vj-fM-l8J" secondAttribute="top" id="Jnl-Gm-Saa"/>
+                                                    <constraint firstItem="9JW-GX-fIQ" firstAttribute="leading" secondItem="1Vj-fM-l8J" secondAttribute="leading" constant="8" id="PPO-6c-bUC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gz5-Pu-KRB" secondAttribute="bottom" id="ZDC-Uf-zry"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9JW-GX-fIQ" secondAttribute="trailing" id="cfi-xQ-8Dq"/>
+                                                    <constraint firstItem="9JW-GX-fIQ" firstAttribute="top" secondItem="1Vj-fM-l8J" secondAttribute="top" id="gLR-EF-ekG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9JW-GX-fIQ" secondAttribute="bottom" id="nfc-4g-idf"/>
+                                                    <constraint firstItem="gz5-Pu-KRB" firstAttribute="leading" secondItem="1Vj-fM-l8J" secondAttribute="leading" constant="8" id="wLq-9a-XrD"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS5-Qo-adE" userLabel="buttonTogglePlayback" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="76" height="76"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="76" id="POH-NE-j8E"/>
+                                                    <constraint firstAttribute="width" constant="76" id="VgF-xn-ddx"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="ic_play_extruded"/>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzD-ZQ-5Gc" userLabel="wrapperButtonPlaybackStepForward">
+                                                <rect key="frame" x="192" y="14" width="56" height="48"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rez-e8-c8M" userLabel="buttonPlaybackStepForward" customClass="UIButtonGenericWithCustomBackground" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="BKv-Y9-BL0"/>
+                                                            <constraint firstAttribute="width" constant="48" id="tcV-aj-BqB"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ic_fast_forward_15"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                <real key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="rez-e8-c8M" firstAttribute="leading" secondItem="gzD-ZQ-5Gc" secondAttribute="leading" id="2OO-ZQ-CEp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="rez-e8-c8M" secondAttribute="trailing" constant="8" id="8Pc-LY-7sV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rez-e8-c8M" secondAttribute="bottom" id="LhA-ZB-Bcd"/>
+                                                    <constraint firstItem="rez-e8-c8M" firstAttribute="top" secondItem="gzD-ZQ-5Gc" secondAttribute="top" id="UF3-23-jje"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gby-Na-l62" userLabel="wrapperButtonGoToNextMedia">
+                                                <rect key="frame" x="252" y="14" width="48" height="48"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-yN-GRo" userLabel="buttonGoToNextMedia" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="DQX-ij-gE4"/>
+                                                            <constraint firstAttribute="width" constant="48" id="yBt-Wk-erJ"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ic_skip_to_next"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="GSs-yN-GRo" firstAttribute="leading" secondItem="Gby-Na-l62" secondAttribute="leading" id="Jay-h8-Srh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GSs-yN-GRo" secondAttribute="bottom" id="TM7-4d-1rM"/>
+                                                    <constraint firstItem="GSs-yN-GRo" firstAttribute="top" secondItem="Gby-Na-l62" secondAttribute="top" id="m9f-cO-X7D"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GSs-yN-GRo" secondAttribute="trailing" id="rZx-xq-Kza"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gzD-ZQ-5Gc" firstAttribute="leading" secondItem="DS5-Qo-adE" secondAttribute="trailing" constant="4" id="g1X-E9-wEq"/>
+                                        </constraints>
+                                    </stackView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="L7G-gQ-fBh" userLabel="activityIndicator">
+                                        <rect key="frame" x="157" y="604" width="20" height="20"/>
+                                        <color key="color" name="black"/>
+                                    </activityIndicatorView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTI-Wh-YcG" userLabel="wrapperTimelineControl">
+                                        <rect key="frame" x="0.0" y="704" width="414" height="38"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="h2p-1B-UGJ" userLabel="sliderTimeline" customClass="UISliderWithHandle" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="80" y="0.0" width="254" height="31"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="sN1-AQ-pxu"/>
+                                                </constraints>
+                                                <color key="thumbTintColor" name="lr-black"/>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esf-U9-C7K" userLabel="textElapsedDuration" customClass="UILabelBase" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="96" y="38" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="10"/>
+                                                <color key="textColor" name="lr-black"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="--:--"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avi-9s-1AE" userLabel="textTotalDuration" customClass="UILabelLabel6" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="318" y="38" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="initialText" value="--:--"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="translatable" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="avi-9s-1AE" firstAttribute="leading" secondItem="h2p-1B-UGJ" secondAttribute="trailing" constant="-14" id="1Q4-n6-EGl"/>
+                                            <constraint firstItem="h2p-1B-UGJ" firstAttribute="centerX" secondItem="XTI-Wh-YcG" secondAttribute="centerX" id="6fG-YE-W5T"/>
+                                            <constraint firstAttribute="bottom" secondItem="avi-9s-1AE" secondAttribute="bottom" id="J0s-DJ-a6L"/>
+                                            <constraint firstAttribute="bottom" secondItem="esf-U9-C7K" secondAttribute="bottom" id="KMO-Rs-hWh"/>
+                                            <constraint firstItem="h2p-1B-UGJ" firstAttribute="leading" secondItem="esf-U9-C7K" secondAttribute="trailing" constant="-14" id="PIe-pR-j4q"/>
+                                            <constraint firstItem="h2p-1B-UGJ" firstAttribute="top" secondItem="XTI-Wh-YcG" secondAttribute="top" id="S6f-Dg-fqd"/>
+                                            <constraint firstItem="esf-U9-C7K" firstAttribute="top" secondItem="h2p-1B-UGJ" secondAttribute="bottom" constant="8" id="ZKL-Is-XVh"/>
+                                            <constraint firstItem="avi-9s-1AE" firstAttribute="top" secondItem="h2p-1B-UGJ" secondAttribute="bottom" constant="8" id="i2Q-9X-zGh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzO-CM-w0n" userLabel="wrapperBottomActions">
+                                        <rect key="frame" x="0.0" y="758" width="414" height="48"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Iq-Go-u9S" userLabel="wrapperSubscribeActions">
+                                                <rect key="frame" x="183" y="0.0" width="48" height="48"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYV-JJ-PXW" userLabel="buttonSubscribe" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="48" id="clr-4v-XJq"/>
+                                                            <constraint firstAttribute="height" constant="48" id="omc-3G-w9Q"/>
+                                                        </constraints>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ic_add_to_list_default"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-nx-Doc" userLabel="buttonUnsubscribe" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="48" id="DD1-Ee-XXy"/>
+                                                            <constraint firstAttribute="height" constant="48" id="Uid-vI-FKS"/>
+                                                        </constraints>
+                                                        <color key="tintColor" name="red"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="ic_trashcan"/>
+                                                    </button>
+                                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-hF-way" userLabel="activityIndicatorSubscription">
+                                                        <rect key="frame" x="14" y="14" width="20" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="color" name="red"/>
+                                                    </activityIndicatorView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="wYV-JJ-PXW" secondAttribute="bottom" id="4aX-ua-NAH"/>
+                                                    <constraint firstItem="wYV-JJ-PXW" firstAttribute="top" secondItem="5Iq-Go-u9S" secondAttribute="top" id="6Fa-Le-3ub"/>
+                                                    <constraint firstItem="hU9-nx-Doc" firstAttribute="top" secondItem="5Iq-Go-u9S" secondAttribute="top" id="8NS-bh-4c9"/>
+                                                    <constraint firstItem="wYV-JJ-PXW" firstAttribute="leading" secondItem="5Iq-Go-u9S" secondAttribute="leading" id="8TR-uB-ukH"/>
+                                                    <constraint firstItem="hU9-nx-Doc" firstAttribute="leading" secondItem="5Iq-Go-u9S" secondAttribute="leading" id="Apn-50-wTk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hU9-nx-Doc" secondAttribute="trailing" id="qRJ-6b-UCF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wYV-JJ-PXW" secondAttribute="trailing" id="qSH-fU-Zrc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hU9-nx-Doc" secondAttribute="bottom" id="zfw-mh-wqq"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOD-de-PcX" userLabel="buttonMenu" customClass="UIButtonGenericWithImage" customModule="Latvijas_Radio" customModuleProvider="target">
+                                                <rect key="frame" x="307" y="0.0" width="48" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="8m7-fd-eoB"/>
+                                                    <constraint firstAttribute="width" constant="48" id="ikm-SC-GOG"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="ic_settings"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="5Iq-Go-u9S" secondAttribute="bottom" id="C3i-UD-1JC"/>
+                                            <constraint firstAttribute="bottom" secondItem="LOD-de-PcX" secondAttribute="bottom" id="F1W-Xw-8T3"/>
+                                            <constraint firstItem="5Iq-Go-u9S" firstAttribute="centerX" secondItem="BzO-CM-w0n" secondAttribute="centerX" id="TED-T0-JXA"/>
+                                            <constraint firstItem="LOD-de-PcX" firstAttribute="leading" secondItem="5Iq-Go-u9S" secondAttribute="trailing" constant="76" id="TMZ-mn-7d1"/>
+                                            <constraint firstItem="5Iq-Go-u9S" firstAttribute="top" secondItem="BzO-CM-w0n" secondAttribute="top" id="bXq-MO-ghV"/>
+                                            <constraint firstItem="LOD-de-PcX" firstAttribute="top" secondItem="BzO-CM-w0n" secondAttribute="top" id="hOn-TQ-du6"/>
+                                        </constraints>
+                                    </view>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Anb-FV-7gC" userLabel="containerNotification">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="100" id="vVT-2U-Av8"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="e12-yi-mow" kind="embed" identifier="SegueEmbedNotification" id="Kl9-4b-7dI"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQk-Ly-xS8" userLabel="containerSharingPanel">
+                                        <rect key="frame" x="0.0" y="714" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="100" id="Jds-Fo-Otw"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="A2T-ep-dE1" kind="embed" identifier="SegueEmbedSharingPanel" id="RYH-se-rTY"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJS-lq-jag" userLabel="containerSendMessagePanel">
+                                        <rect key="frame" x="0.0" y="714" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="100" id="z4m-AA-auf"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="hoe-YS-FCW" kind="embed" identifier="SegueEmbedSendMessagePanel" id="djc-bH-nRG"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Key-7g-lRd" userLabel="containerCurrentMediaOptionsPanel">
+                                        <rect key="frame" x="0.0" y="714" width="414" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="100" id="bsE-kZ-qiz"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="GwU-ru-9HE" kind="embed" identifier="SegueEmbedCurrentMediaOptionsPanel" id="v8R-74-PfU"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Iut-bB-YqA"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="XTI-Wh-YcG" firstAttribute="top" secondItem="xiS-KH-mDE" secondAttribute="bottom" constant="24" id="3YO-ZH-wef"/>
+                                    <constraint firstItem="U7m-E5-0o3" firstAttribute="top" secondItem="Iut-bB-YqA" secondAttribute="top" constant="24" id="4Dy-SO-re1"/>
+                                    <constraint firstItem="L7G-gQ-fBh" firstAttribute="centerX" secondItem="tX8-jc-zNJ" secondAttribute="centerX" constant="-40" id="7Gc-Em-Wxy"/>
+                                    <constraint firstItem="6JY-bk-IHk" firstAttribute="top" secondItem="tX8-jc-zNJ" secondAttribute="topMargin" constant="8" id="8vU-Ph-xgI"/>
+                                    <constraint firstItem="U7m-E5-0o3" firstAttribute="leading" secondItem="Iut-bB-YqA" secondAttribute="leading" constant="8" id="BNt-eL-yC0"/>
+                                    <constraint firstItem="XTI-Wh-YcG" firstAttribute="leading" secondItem="Iut-bB-YqA" secondAttribute="leading" id="Csy-X0-9PS"/>
+                                    <constraint firstItem="WG3-8N-wee" firstAttribute="top" secondItem="tX8-jc-zNJ" secondAttribute="topMargin" constant="8" id="E7I-Ku-BVz"/>
+                                    <constraint firstItem="xiS-KH-mDE" firstAttribute="centerX" secondItem="tX8-jc-zNJ" secondAttribute="centerX" id="EiQ-Dh-Nq9"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xiS-KH-mDE" secondAttribute="trailing" id="FFc-Mo-KgD"/>
+                                    <constraint firstItem="Iut-bB-YqA" firstAttribute="trailing" secondItem="MRH-Fk-kpx" secondAttribute="trailing" id="GYI-5h-S9U"/>
+                                    <constraint firstItem="MRH-Fk-kpx" firstAttribute="leading" secondItem="Iut-bB-YqA" secondAttribute="leading" id="Gyl-9e-r0s"/>
+                                    <constraint firstItem="Iut-bB-YqA" firstAttribute="trailing" secondItem="XTI-Wh-YcG" secondAttribute="trailing" id="Ixg-YS-Iip"/>
+                                    <constraint firstItem="Key-7g-lRd" firstAttribute="leading" secondItem="tX8-jc-zNJ" secondAttribute="leading" id="KZa-GJ-ZUQ"/>
+                                    <constraint firstItem="Anb-FV-7gC" firstAttribute="leading" secondItem="tX8-jc-zNJ" secondAttribute="leading" id="Ktd-OH-M77"/>
+                                    <constraint firstAttribute="trailing" secondItem="6JY-bk-IHk" secondAttribute="trailing" constant="16" id="Lj4-mH-4Wb"/>
+                                    <constraint firstAttribute="bottom" secondItem="NJS-lq-jag" secondAttribute="bottom" id="NNA-pJ-7yg"/>
+                                    <constraint firstAttribute="trailing" secondItem="NJS-lq-jag" secondAttribute="trailing" id="O4b-Gg-nIu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Anb-FV-7gC" secondAttribute="trailing" id="PfK-ef-WbD"/>
+                                    <constraint firstItem="Iut-bB-YqA" firstAttribute="trailing" secondItem="BzO-CM-w0n" secondAttribute="trailing" id="SDk-Xc-5Qy"/>
+                                    <constraint firstItem="Iut-bB-YqA" firstAttribute="bottom" secondItem="BzO-CM-w0n" secondAttribute="bottom" constant="8" id="TZx-Mc-678"/>
+                                    <constraint firstItem="BzO-CM-w0n" firstAttribute="top" secondItem="XTI-Wh-YcG" secondAttribute="bottom" constant="16" id="X0h-UW-XBa"/>
+                                    <constraint firstItem="6JY-bk-IHk" firstAttribute="leadingMargin" secondItem="WG3-8N-wee" secondAttribute="trailing" constant="16" id="Y6O-tR-aJN"/>
+                                    <constraint firstItem="MRH-Fk-kpx" firstAttribute="top" secondItem="tX8-jc-zNJ" secondAttribute="topMargin" constant="64" id="YfF-nD-oD8"/>
+                                    <constraint firstItem="eUb-H6-13g" firstAttribute="top" secondItem="MRH-Fk-kpx" secondAttribute="bottom" constant="16" id="Zxm-CK-jBR"/>
+                                    <constraint firstItem="Iut-bB-YqA" firstAttribute="trailing" secondItem="nQk-Ly-xS8" secondAttribute="trailing" id="aUx-h4-jy7"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="eUb-H6-13g" secondAttribute="trailing" constant="24" id="buZ-ja-BxT"/>
+                                    <constraint firstItem="L7G-gQ-fBh" firstAttribute="top" secondItem="xiS-KH-mDE" secondAttribute="top" id="ciG-nF-RX0"/>
+                                    <constraint firstItem="Iut-bB-YqA" firstAttribute="bottom" secondItem="nQk-Ly-xS8" secondAttribute="bottom" id="e9j-Qy-QzN"/>
+                                    <constraint firstItem="xiS-KH-mDE" firstAttribute="top" secondItem="eUb-H6-13g" secondAttribute="bottom" id="esg-gf-1aM"/>
+                                    <constraint firstItem="xiS-KH-mDE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tX8-jc-zNJ" secondAttribute="leading" id="fCX-dQ-SmW"/>
+                                    <constraint firstItem="nQk-Ly-xS8" firstAttribute="leading" secondItem="Iut-bB-YqA" secondAttribute="leading" id="rBX-dq-gKo"/>
+                                    <constraint firstItem="NJS-lq-jag" firstAttribute="leading" secondItem="tX8-jc-zNJ" secondAttribute="leading" id="sbw-nJ-iTF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Key-7g-lRd" secondAttribute="bottom" id="t0q-ji-E5D"/>
+                                    <constraint firstItem="eUb-H6-13g" firstAttribute="leading" secondItem="tX8-jc-zNJ" secondAttribute="leadingMargin" constant="24" id="tgV-CZ-VZa"/>
+                                    <constraint firstItem="BzO-CM-w0n" firstAttribute="leading" secondItem="Iut-bB-YqA" secondAttribute="leading" id="wT9-gU-qru"/>
+                                    <constraint firstAttribute="top" secondItem="Anb-FV-7gC" secondAttribute="top" id="yrA-Bh-hZ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Key-7g-lRd" secondAttribute="trailing" id="zSc-9R-wGm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C8L-L7-YNN"/>
+                        <color key="backgroundColor" name="lr-white"/>
+                        <constraints>
+                            <constraint firstItem="tX8-jc-zNJ" firstAttribute="leading" secondItem="C8L-L7-YNN" secondAttribute="leading" id="0FR-Te-zrn"/>
+                            <constraint firstItem="tX8-jc-zNJ" firstAttribute="bottom" secondItem="C8L-L7-YNN" secondAttribute="bottom" id="0pe-h5-9iZ"/>
+                            <constraint firstItem="tX8-jc-zNJ" firstAttribute="top" secondItem="C8L-L7-YNN" secondAttribute="top" id="IKb-y7-kMt"/>
+                            <constraint firstItem="tX8-jc-zNJ" firstAttribute="trailing" secondItem="C8L-L7-YNN" secondAttribute="trailing" id="s30-QC-TKR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="L7G-gQ-fBh" id="xpC-7U-4K8"/>
+                        <outlet property="activityIndicatorSubscription" destination="Tgm-hF-way" id="JKP-AW-Di8"/>
+                        <outlet property="buttonBack" destination="U7m-E5-0o3" id="hBm-0C-c7a"/>
+                        <outlet property="buttonDownload" destination="kKs-r6-gaQ" id="Ana-V5-BFc"/>
+                        <outlet property="buttonGoToNextMedia" destination="GSs-yN-GRo" id="ED2-C3-RR5"/>
+                        <outlet property="buttonGoToPrevMedia" destination="9JW-GX-fIQ" id="MiS-vJ-ruZ"/>
+                        <outlet property="buttonMenu" destination="LOD-de-PcX" id="RON-HM-TKr"/>
+                        <outlet property="buttonPlaybackStepBackward" destination="gz5-Pu-KRB" id="4Hp-No-fQc"/>
+                        <outlet property="buttonPlaybackStepForward" destination="rez-e8-c8M" id="AhU-pw-DSF"/>
+                        <outlet property="buttonSendMessage" destination="WG3-8N-wee" id="igE-Wv-u4a"/>
+                        <outlet property="buttonShare" destination="6JY-bk-IHk" id="iec-13-Uwf"/>
+                        <outlet property="buttonSubscribe" destination="wYV-JJ-PXW" id="n5Z-d8-9Dq"/>
+                        <outlet property="buttonTogglePlayback" destination="DS5-Qo-adE" id="O50-Lc-8RE"/>
+                        <outlet property="buttonUnsubscribe" destination="hU9-nx-Doc" id="ejE-QT-brc"/>
+                        <outlet property="containerCurrentMediaOptionsPanel" destination="Key-7g-lRd" id="Fhx-0f-WRL"/>
+                        <outlet property="containerCurrentMediaOptionsPanelBottomConstraint" destination="t0q-ji-E5D" id="5AM-9k-W5T"/>
+                        <outlet property="containerNotification" destination="Anb-FV-7gC" id="KcM-Qh-60b"/>
+                        <outlet property="containerSendMessagePanel" destination="NJS-lq-jag" id="6GX-uX-m2x"/>
+                        <outlet property="containerSendMessagePanelBottomConstraint" destination="NNA-pJ-7yg" id="mcw-we-6jr"/>
+                        <outlet property="containerSharingPanel" destination="nQk-Ly-xS8" id="xDP-ai-VAu"/>
+                        <outlet property="containerSharingPanelBottomConstraint" destination="e9j-Qy-QzN" id="9Iq-Tp-mgV"/>
+                        <outlet property="downloadProgress" destination="G5n-Rn-Zc4" id="FQR-3C-QMB"/>
+                        <outlet property="imageChannel" destination="Voh-2Y-u2q" id="vYI-7A-cjW"/>
+                        <outlet property="imageMedia" destination="Dgt-d1-N3T" id="2Kr-JO-hRg"/>
+                        <outlet property="sliderTimeline" destination="h2p-1B-UGJ" id="5FG-wh-YlK"/>
+                        <outlet property="textCategory" destination="Yhw-TK-pPd" id="BgP-Qm-w4F"/>
+                        <outlet property="textElapsedDuration" destination="esf-U9-C7K" id="p6c-CT-FiN"/>
+                        <outlet property="textTitle" destination="59S-fx-9pd" id="Em0-uN-yFu"/>
+                        <outlet property="textTotalDuration" destination="avi-9s-1AE" id="K3G-01-eas"/>
+                        <outlet property="wrapperButtonDownload" destination="yyB-fw-Lps" id="DbQ-bQ-DW6"/>
+                        <outlet property="wrapperButtonPlaybackStepForward" destination="gzD-ZQ-5Gc" id="Fzx-v3-yWi"/>
+                        <outlet property="wrapperMediaImage" destination="SMn-jh-6iy" id="Zup-eE-kla"/>
+                        <outlet property="wrapperTimelineControl" destination="XTI-Wh-YcG" id="rja-T7-DTC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+        <!--SharingPanelViewController-->
+        <scene sceneID="DyE-tP-dBF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SharingPanel" referencedIdentifier="SharingPanelViewController" id="A2T-ep-dE1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="esQ-uq-yk2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="96"/>
+        </scene>
+        <!--SendMessagePanelViewController-->
+        <scene sceneID="Izs-H8-6kt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SendMessagePanel" referencedIdentifier="SendMessagePanelViewController" id="hoe-YS-FCW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMK-rv-I2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="64"/>
+        </scene>
+        <!--CurrentMediaOptionsPanelViewController-->
+        <scene sceneID="5ja-6w-QIt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CurrentMediaOptionsPanel" referencedIdentifier="CurrentMediaOptionsPanelViewController" id="GwU-ru-9HE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7av-b8-Bg6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="130"/>
+        </scene>
+        <!--NotificationViewController-->
+        <scene sceneID="Xx1-ki-bWj">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notification" referencedIdentifier="NotificationViewController" id="e12-yi-mow" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLH-1e-JMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="496"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_add_to_list_default" width="25.100000381469727" height="16.299999237060547"/>
+        <image name="ic_chevron_left" width="7.3610000610351562" height="11.777000427246094"/>
+        <image name="ic_download_default" width="13.86299991607666" height="17.797000885009766"/>
+        <image name="ic_fast_forward_15" width="32" height="32"/>
+        <image name="ic_message" width="19.496000289916992" height="18.534999847412109"/>
+        <image name="ic_play_extruded" width="30" height="30"/>
+        <image name="ic_rewind_15" width="32" height="32"/>
+        <image name="ic_settings" width="20" height="20"/>
+        <image name="ic_share_default" width="13.675000190734863" height="15"/>
+        <image name="ic_skip_to_next" width="10.300000190734863" height="13.899999618530273"/>
+        <image name="ic_skip_to_previous" width="10.300000190734863" height="13.899999618530273"/>
+        <image name="ic_trashcan" width="14.300000190734863" height="19.799999237060547"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black5percent">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.05000000074505806" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="channel2">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.792156862745098" green="0.792156862745098" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lr-white">
+            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="0.8784313725490196" green="0.0" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
